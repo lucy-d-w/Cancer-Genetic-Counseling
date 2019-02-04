@@ -11,7 +11,7 @@
   * users will be allowed to scroll back and look at other slides to answer the questions
   * everyone will take every question, regardless of track
   * will require a database/a more robust backend
-* would like to collect statistics on what users click on, and how they scroll through the site
+* would like to collect statistics on what users click on, and how they scroll through the site (Google or Watson Analytics?)
 * prefer to use square bullet points
 * "learn more" buttons should be more specific so that patients know what they are learning more about
 
@@ -72,3 +72,4 @@ Closing slide:
 * investigate Firebase/other databse services
 * look for library that can collect navigation statistics
 * begin React Prototype
+* look into website analytics tools
