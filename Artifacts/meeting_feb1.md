@@ -12,7 +12,7 @@
   * everyone will take every question, regardless of track
   * will require a database/a more robust backend
 * would like to collect statistics on what users click on, and how they scroll through the site (Google or Watson Analytics?)
-* prefer to use square bullet points
+* prefer to use square bullet points 
 * "learn more" buttons should be more specific so that patients know what they are learning more about
 
 ### Wireframe Slides
@@ -21,7 +21,7 @@ Backbone (BB) 3:
 * content from sub-bullets on original slide should be available as a drop-down box
 * add '+' to content boxes for drop-down menu
 
-Learn More (LM) 4.1:
+Learn More (LM) 4.1: ✓
 * change back to normal list layout
 
 BB 5:
