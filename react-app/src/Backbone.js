@@ -1,9 +1,10 @@
 import React from "react";
 import './Backbone.css';
 
-const Backbone = ({title}) => (
+const Backbone = (props) => (
     <div className="BB-body">
-        <header className="BB-header">{title}</header>
+        <header className="BB-header">{props.title}</header>
+        <div className="Content">{props.children}</div>
     </div>
 );
 
