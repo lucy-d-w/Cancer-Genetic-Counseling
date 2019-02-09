@@ -41,19 +41,19 @@ BB 9:
 * add graphics back
 * add in new Learn More content
 
-BB 10:
+BB 10: ✓
 * add arrow back with +/- symbols
 
-BB 11, 12:
+BB 11, 12: ✓
 * move "you" back above the circle, change wording to "For you..."
 
 LM 12.1:
 * need graphic with animation
 
 BB 14:
-* add "(GINA)" to the end of the title
+* add "(GINA)" to the end of the title ✓
 * clients have edits for their own content for this slide
-* change wording to "covers" and "does not cover"
+* change wording to "covers" and "does not cover" ✓
 
 BB 15:
 * clients also have content changes for this slide
