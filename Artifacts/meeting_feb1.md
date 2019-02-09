@@ -30,11 +30,11 @@ BB 5: ✓
 LM 5.2:✓
 * put text back on slide
 
-BB 8:
+BB 8: ✓
 * put arrow shapes back, like in original slide
 * might add more cancer types to click on
 
-LM 8.1, 8.2:
+LM 8.1, 8.2: ✓
 * add arrows back
 
 BB 9:
