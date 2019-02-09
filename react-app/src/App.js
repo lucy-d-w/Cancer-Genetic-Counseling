@@ -7,6 +7,12 @@ import Backbone3 from './Backbones/Backbone3'
 import Backbone4 from './Backbones/Backbone4'
 import Backbone10 from './Backbones/Backbone10'
 import Backbone11 from './Backbones/Backbone11'
+import Backbone12 from './Backbones/Backbone12'
+import Backbone13 from './Backbones/Backbone13'
+import Backbone14 from './Backbones/Backbone14'
+import Backbone15 from './Backbones/Backbone15'
+import Backbone16 from './Backbones/Backbone16'
+import Backbone17 from './Backbones/Backbone17'
 
 class App extends Component {
   render() {
@@ -19,6 +25,12 @@ class App extends Component {
           <Backbone4></Backbone4>
           <Backbone10></Backbone10>
           <Backbone11></Backbone11>
+          <Backbone12></Backbone12>
+          <Backbone13></Backbone13>
+          <Backbone14></Backbone14>
+          <Backbone15></Backbone15>
+          <Backbone16></Backbone16>
+          <Backbone17></Backbone17>
         </header>
       </div>
     );
