@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Backbone from './Backbone'
-import Backbone2 from './Backbone2'
+import Backbone2 from './Backbones/Backbone2'
 
 class App extends Component {
   render() {
