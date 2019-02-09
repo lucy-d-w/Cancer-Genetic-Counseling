@@ -24,10 +24,10 @@ Backbone (BB) 3:
 Learn More (LM) 4.1: ✓
 * change back to normal list layout
 
-BB 5:
+BB 5: ✓
 * add coin graphic/animation back in
 
-LM 5.2:
+LM 5.2:✓
 * put text back on slide
 
 BB 8:
