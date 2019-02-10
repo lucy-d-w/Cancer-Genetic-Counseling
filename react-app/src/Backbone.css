@@ -1,13 +1,74 @@
+.Backbone {
+    text-align: center;
+}
+
 .BB-body {
     background-color: #B0E0E6;
     height: 90vh;
     width: 90vw;
     border-radius: 5vh;
     margin: 5vh 5vw;
+
 }
 
 .BB-header {
     font-size: 150%;
-    margin: 2vh 0;
+    margin: 2vh 0 4vh 0;
+    height: 10%;
     width: 100%;
 }
+
+.BB-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Content-list {
+    align-self: center;
+    display: inline-block;
+    width: 60%;
+    height: 90%;
+    margin: 2vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Content-box {
+    background-color: white;
+    height: 10vh;
+    border-radius: 5vh;
+    margin: 1vh;
+    left: 10%; 
+    line-height: 10vh;
+}
+
+.Drop-down {
+    background-color: #ECECEC;
+    width: 60%;
+    margin: 0 10%;
+    padding: 1% 10%;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Side-column {
+    display: inline-block;
+    height: 100%;
+    width: 15vw;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Graphic {
+    height: 20vh;
+    width: 10vw;
+    margin: 5vh 2.5vw;
+    background-color: gray;
+}
+
