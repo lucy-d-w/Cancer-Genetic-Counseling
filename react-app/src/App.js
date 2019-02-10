@@ -5,6 +5,11 @@ import Backbone from './Backbone'
 import Backbone2 from './Backbones/Backbone2'
 import Backbone3 from './Backbones/Backbone3'
 import Backbone4 from './Backbones/Backbone4'
+import Backbone5 from './Backbones/Backbone5'
+import Backbone6 from './Backbones/Backbone6'
+import Backbone7 from './Backbones/Backbone7'
+import Backbone8 from './Backbones/Backbone8'
+import Backbone9 from './Backbones/Backbone9'
 import Backbone10 from './Backbones/Backbone10'
 import Backbone11 from './Backbones/Backbone11'
 import Backbone12 from './Backbones/Backbone12'
@@ -23,6 +28,11 @@ class App extends Component {
           <Backbone2></Backbone2>
           <Backbone3></Backbone3>
           <Backbone4></Backbone4>
+          <Backbone5></Backbone5>
+          <Backbone6></Backbone6>
+          <Backbone7></Backbone7>
+          <Backbone8></Backbone8>
+          <Backbone9></Backbone9>
           <Backbone10></Backbone10>
           <Backbone11></Backbone11>
           <Backbone12></Backbone12>

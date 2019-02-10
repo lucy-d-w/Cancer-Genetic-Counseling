@@ -1,10 +1,16 @@
 import React from "react";
 import Backbone from '../Backbone';
 
-const Backbone9 = () => (
-    <Backbone title="Cancer and Inherited Genes">
-        <p>test</p>
-    </Backbone>
-)
+class Backbone9 extends React.Component {
+    render() {
+        return (
+            <Backbone title="Things to Remember...">
+                <div className="BB-content">
+                        
+                </div>
+            </Backbone>
+        );
+    }
+}
 
 export default Backbone9;
