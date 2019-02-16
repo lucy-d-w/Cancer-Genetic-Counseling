@@ -8,7 +8,7 @@ class Backbone5 extends React.Component {
             <Backbone title="Chance to Inherit a Cancer Risk Gene">
                 <div className="BB-content">
                     <div className="Main-content" style={{textalign: 'center'}}>
-                        <img src={chart} className='Main-graphic' onClick={this.toggleOverlay}></img>
+                        <img src={chart} className='Main-graphic'></img>
                     </div>
                 </div>
             </Backbone>

@@ -24,7 +24,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <Backbone title="Title Page"></Backbone>
+          <Backbone><h1>Title</h1></Backbone>
           <Backbone2></Backbone2>
           <Backbone3></Backbone3>
           <Backbone4></Backbone4>

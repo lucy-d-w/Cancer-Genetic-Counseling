@@ -1,4 +1,10 @@
+@font-face {
+    font-family: Lato;
+    src: url(./Fonts/Lato2OFL/Lato2OFL/Lato-Regular.ttf);
+}
+
 .Backbone {
+    font-family: Lato;
     text-align: center;
 }
 
@@ -12,7 +18,6 @@
 }
 
 .BB-header {
-    font-size: 150%;
     margin: 2vh 0 4vh 0;
     height: 10%;
     width: 100%;
@@ -80,12 +85,16 @@
     background-color: gray;
 }
 
+img {
+    margin: 2vh;
+}
+
 li {
     text-align: left;
     list-style-position: inside;
     list-style-type: square;
     text-indent: -1em;
-    padding-left: 2em;
+    padding-left: 1em;
 }
 
 .LM-button {
@@ -100,15 +109,12 @@ li {
     height: 60vh;
     width: 20vw;
     margin: 5vh 2.5vw;
+    box-sizing: border-box;
+    padding: 5pt 10pt;
 }
 
-.Column li {
-    text-align: left;
-}
-
-.Column strong {
-    font-size: 120%;
-    line-height: .5em;
+.Column H4 {
+    line-height: 1.5em;
 }
 
 .Circle {

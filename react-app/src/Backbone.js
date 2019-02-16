@@ -1,12 +1,12 @@
 import React from "react";
 import './Backbone.css';
-import { Card, Button } from "@blueprintjs/core";
+import { Card, H2 } from "@blueprintjs/core";
 
 
 
 const Backbone = (props) => (
     <Card className="BB-body">
-        <header className="BB-header">{props.title}</header>
+        <H2 className="BB-header">{props.title}</H2>
         <div className="Content">{props.children}</div>
     </Card>
 );

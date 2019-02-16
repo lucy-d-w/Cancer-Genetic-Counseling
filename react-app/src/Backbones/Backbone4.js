@@ -10,9 +10,9 @@ class Backbone4 extends React.Component {
                 <div className="BB-content">
                     <div className="Side-columns">
                         <img src={dna}  style={{height: "50vh"}}></img>
-                        <Button className="LM-button">Learn More: Basic Genetics</Button>
+                        {/* <Button className="LM-button">Learn More: Basic Genetics</Button> */}
                     </div>
-                    <div className={"Main-content-box Content-box"}>
+                    <div className={"Main-content Content-box"}>
                         <li>Some of the genes we inherit help stop cancer</li>
                         <li>Our genes come in pairs</li>
                         <li>If we inherit a non-working copy, we have a higher chance of getting cancer</li>
@@ -20,7 +20,7 @@ class Backbone4 extends React.Component {
                     </div>
                     <div className="Side-columns">
                         <img src={dna}  style={{height: "50vh"}}></img>
-                        <Button className="LM-button">Learn More: How Genes are Inherited</Button>
+                        {/* <Button className="LM-button">Learn More: How Genes are Inherited</Button> */}
                     </div>
                 </div>    
             </Backbone>

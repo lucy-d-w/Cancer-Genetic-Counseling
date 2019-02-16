@@ -1,5 +1,7 @@
 import React from "react";
 import Backbone from '../Backbone';
+import { H4 } from "@blueprintjs/core";
+import dna from '../Graphics/x-double-dna.png'
 
 class Backbone8 extends React.Component {
     render() {
@@ -7,15 +9,15 @@ class Backbone8 extends React.Component {
             <Backbone title="Hereditary Cancers and Medical Care">
                 <div className="BB-content">
                     <div className="Column Content-box">
-                        <strong>Find cancer risk gene</strong>
+                        <H4>Find cancer risk gene</H4>
+                        <img src={dna} style={{height:'60%'}}></img>
+                    </div>
+                    <div className="Column Content-box">
+                        <H4>Identify types of cancer</H4>
                         <div className="Graphic" style={{width: "15vw"}}></div>
                     </div>
                     <div className="Column Content-box">
-                        <strong>Identify types of cancer</strong>
-                        <div className="Graphic" style={{width: "15vw"}}></div>
-                    </div>
-                    <div className="Column Content-box">
-                        <strong>Provide better medical care</strong>
+                        <H4>Provide better medical care</H4>
                         <li>Cancer prevention</li>
                         <li>Early detection</li>
                         <li>Cancer treatment</li>
