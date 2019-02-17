@@ -80,9 +80,9 @@
 
 .Graphic {
     height: 20vh;
-    width: 10vw;
+    /* width: 10vw; */
     margin: 5vh 2.5vw;
-    background-color: gray;
+    /* background-color: white; */
 }
 
 img {
@@ -126,8 +126,15 @@ li {
 }
 
 .Learn-more {
-    height: 90vh;
-    width: 90vw;
-    margin: 5vh 5vw;
     background-color: pink;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+}
+
+.Cover {
+    position: fixed;
+    /* width: 100vw;
+    height: 100vh; */
+    /* background: green; */
 }

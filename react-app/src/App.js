@@ -21,28 +21,34 @@ import Backbone17 from './Backbones/Backbone17'
 
 class App extends Component {
   render() {
+    const documentWidth = document.body.clientWidth;
+    const windowWidth = window.innerWidth;
+    const scrollBarWidth = windowWidth - documentWidth;
+    // const scrollBarWidth = document.getElementById("body").offsetWidth - this.body.clientWidth;
     return (
-      <div className="App">
-        <header className="App-header">
-          <Backbone><h1>Title</h1></Backbone>
-          <Backbone2></Backbone2>
-          <Backbone3></Backbone3>
-          <Backbone4></Backbone4>
-          <Backbone5></Backbone5>
-          <Backbone6></Backbone6>
-          <Backbone7></Backbone7>
-          <Backbone8></Backbone8>
-          <Backbone9></Backbone9>
-          <Backbone10></Backbone10>
-          <Backbone11></Backbone11>
-          <Backbone12></Backbone12>
-          <Backbone13></Backbone13>
-          <Backbone14></Backbone14>
-          <Backbone15></Backbone15>
-          <Backbone16></Backbone16>
-          <Backbone17></Backbone17>
-        </header>
-      </div>
+      <body id="body" style={{paddingRight:{scrollBarWidth}}}>
+        <div className="App">
+          <header className="App-header">
+            <Backbone><h1>Genetic Testing for Hereditary Cancers</h1></Backbone>
+            <Backbone2></Backbone2>
+            <Backbone3></Backbone3>
+            <Backbone4></Backbone4>
+            <Backbone5></Backbone5>
+            <Backbone6></Backbone6>
+            <Backbone7></Backbone7>
+            <Backbone8></Backbone8>
+            <Backbone9></Backbone9>
+            <Backbone10></Backbone10>
+            <Backbone11></Backbone11>
+            <Backbone12></Backbone12>
+            <Backbone13></Backbone13>
+            <Backbone14></Backbone14>
+            <Backbone15></Backbone15>
+            <Backbone16></Backbone16>
+            <Backbone17></Backbone17>
+          </header>
+        </div>
+      </body>
     );
   }
 }

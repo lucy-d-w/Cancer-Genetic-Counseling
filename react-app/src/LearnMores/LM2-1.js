@@ -4,24 +4,20 @@ import { H4 } from "@blueprintjs/core";
 import dna from '../Graphics/x-double-dna.png'
 import person from '../Graphics/person.png'
 
-class Backbone8 extends React.Component {
+class LM_2_1 extends React.Component {
     render() {
         return (
-            <Backbone title="Hereditary Cancers and Medical Care">
+            <Backbone title="Causes of Cancer">
                 <div className="BB-content">
                     <div className="Column Content-box">
-                        <H4>Find cancer risk gene</H4>
-                        <img src={dna} style={{height:'60%'}}></img>
+                        <H4>Sporadic</H4>
+                        
                     </div>
                     <div className="Column Content-box">
-                        <H4>Identify types of cancer</H4>
-                        <img src={person} style={{height:'50%'}}></img>
+                        <H4>Hereditary</H4>
                     </div>
                     <div className="Column Content-box">
-                        <H4>Provide better medical care</H4>
-                        <li>Cancer prevention</li>
-                        <li>Early detection</li>
-                        <li>Cancer treatment</li>
+                        <H4>Familial</H4>
                     </div>
                         
                 </div>
@@ -30,4 +26,4 @@ class Backbone8 extends React.Component {
     }
 }
 
-export default Backbone8;
+export default LM_2_1;

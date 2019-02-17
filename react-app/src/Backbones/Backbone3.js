@@ -2,6 +2,10 @@ import React from "react";
 import Backbone from '../Backbone';
 import { Collapse, Icon } from "@blueprintjs/core";
 import { IconNames } from "@blueprintjs/icons";
+import familytree from '../Graphics/family-tree.png'
+import world from '../Graphics/world.png'
+import group from '../Graphics/group.png'
+import person from '../Graphics/person.png'
 
 class Backbone3 extends React.Component {
     state = {
@@ -13,8 +17,8 @@ class Backbone3 extends React.Component {
             <Backbone title="Signs of Hereditary Cancer">
                 <div className="BB-content">
                     <div className="Side-column">
-                        <div className="Graphic"></div>
-                        <div className="Graphic"></div>
+                        <img src={familytree} className="Graphic"></img>
+                        <img src={person} className="Graphic"></img>
                     </div>
                     <div className="Content-list Main-content">
                         <div className="Content-box">Cancer diagnosed young</div>
@@ -32,8 +36,8 @@ class Backbone3 extends React.Component {
                         <div className="Content-box">Some tumor study results</div>
                     </div>
                     <div className="Side-column">
-                        <div className="Graphic"></div>
-                        <div className="Graphic"></div>
+                        <img src={group} className="Graphic"></img>
+                        <img src={world} className="Graphic"></img>
                     </div>
                 </div>
             </Backbone>
