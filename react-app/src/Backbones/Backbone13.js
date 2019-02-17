@@ -1,10 +1,19 @@
 import React from "react";
 import Backbone from '../Backbone';
+import costbenefits from '../Graphics/costbenefits.png'
 
-const Backbone13 = () => (
-    <Backbone title="Benefits & Considerations">
-        <p>test</p>
-    </Backbone>
-)
+class Backbone13 extends React.Component {
+    render() {
+        return (
+            <Backbone title="Benefits & Considerations">
+                <div className="Content">
+                    <div className="Main-content" style={{textalign: 'center'}}>
+                        <img src={costbenefits} className='Main-graphic'></img>
+                    </div>
+                </div>
+            </Backbone>
+        );
+    }
+}
 
 export default Backbone13;
