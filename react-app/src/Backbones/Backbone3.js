@@ -24,7 +24,7 @@ class Backbone3 extends React.Component {
                         <div className="Content-box">Cancer diagnosed young</div>
                         <div className="Content-box">Cancer in multiple family members across generations</div>
                         <div className="Content-box" onClick={this.handleClick}>A person with multiple cancers
-                            <Icon icon={IconNames.PLUS}></Icon>
+                            {/* <Icon icon={IconNames.PLUS}></Icon> */}
                         </div>
                         <Collapse isOpen={this.state.isOpen}>
                             <pre className="Drop-down" >

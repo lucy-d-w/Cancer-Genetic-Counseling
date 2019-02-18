@@ -13,7 +13,7 @@
     height: 90vh;
     width: 90vw;
     border-radius: 5vh;
-    margin: 5vh 5vw;
+    margin: 5vh 4vw; /* A temp fix */
 
 }
 
@@ -95,6 +95,8 @@ li {
     list-style-type: square;
     text-indent: -1em;
     padding-left: 1em;
+
+    line-height: 200%;
 }
 
 .LM-button {
@@ -127,13 +129,13 @@ li {
 
 .Learn-more {
     background-color: pink;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     z-index: 4;
 }
 
 .Cover {
-    position: fixed;
+    position: absolute;
     /* width: 100vw;
     height: 100vh; */
     /* background: green; */

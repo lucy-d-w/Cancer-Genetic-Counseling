@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Backbone from './Backbone'
+import Backbone1 from './Backbones/Backbone1'
 import Backbone2 from './Backbones/Backbone2'
 import Backbone3 from './Backbones/Backbone3'
 import Backbone4 from './Backbones/Backbone4'
@@ -29,7 +29,7 @@ class App extends Component {
       <body id="body" style={{paddingRight:{scrollBarWidth}}}>
         <div className="App">
           <header className="App-header">
-            <Backbone><h1>Genetic Testing for Hereditary Cancers</h1></Backbone>
+            <Backbone1></Backbone1>
             <Backbone2></Backbone2>
             <Backbone3></Backbone3>
             <Backbone4></Backbone4>
