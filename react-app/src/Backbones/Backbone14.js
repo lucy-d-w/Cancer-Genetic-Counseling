@@ -17,7 +17,7 @@ class Backbone14 extends React.Component {
                         <H4>Does not cover:</H4>
                         <li>Supplemental insurance such as life, disability, and long-term care.</li>
                         <li>Military health insurance</li>
-                        <li>Tip*: Get supplemental insurance policies in place before genetic testing.</li>
+                        <li>Tip*: Get these insurance policies before testing.</li>
 
                     </div>
                 </div>
