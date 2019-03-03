@@ -20,7 +20,7 @@ class Backbone extends React.Component {
                     }
                                         
     scrollDown() {
-        window.scrollBy(0, window.innerHeight);
+        window.scrollBy(0, .98*window.innerHeight);
     }
     
 }
