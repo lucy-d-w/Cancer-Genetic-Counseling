@@ -1,7 +1,6 @@
 import React from "react";
 import Backbone from '../Backbone';
 import dna from '../Graphics/dna.png'
-import { Button } from "@blueprintjs/core";
 
 class Backbone4 extends React.Component {
     render() {

@@ -3,11 +3,11 @@ import classNames from "classnames";
 import Backbone from '../Backbone';
 import LM_2_1 from '../LearnMores/LM2-1'
 import chart from '../Graphics/bb2-chart.png'
-import { Button, Classes, Code, H3, H5, Intent, Dialog} from "@blueprintjs/core";
+import { Classes, Code, H3, H5, Intent, Dialog} from "@blueprintjs/core";
 
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
-class Backbone2 extends React.Component {
+class Backbone2 extends React.Component { 
     state = {
         autoFocus: true,
         canEscapeKeyClose: true,

@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 import Backbone from '../Backbone';
 import dna from '../Graphics/x-double-dna.png'
-import { H1 } from "@blueprintjs/core";
+import { H1} from "@blueprintjs/core";
 
 class Backbone1 extends React.Component {
     render() {
