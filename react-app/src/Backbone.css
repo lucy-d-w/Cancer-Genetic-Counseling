@@ -13,7 +13,7 @@
     height: 90vh;
     width: 90vw;
     border-radius: 5vh;
-    margin: 5vh 4vw 1vh 4vw; /* A temp fix */
+    margin: 3vh 4vw 1vh 4vw; /* A temp fix */
 
 }
 
@@ -30,7 +30,7 @@
 }
 
 .Arrow {
-    height:1vh;
+    height:3vh;
 }
 
 .Content-list {
