@@ -31,6 +31,12 @@
 
 .Arrow {
     height:3vh;
+    background-color: transparent;
+    border: none;
+}
+
+.Arrow img {
+    height: 100%;
 }
 
 .Content-list {
