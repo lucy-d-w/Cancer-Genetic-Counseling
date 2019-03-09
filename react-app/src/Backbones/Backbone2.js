@@ -12,7 +12,7 @@ class Backbone2 extends React.Component {
     state = {
         autoFocus: true,
         canEscapeKeyClose: true,
-        canOutsideClickClose: true,
+        canOutsideClickClose: false,
         enforceFocus: true,
         isOpen: false,
         usePortal: true,

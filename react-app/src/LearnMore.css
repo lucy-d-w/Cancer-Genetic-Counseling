@@ -1,6 +1,10 @@
-.Cover {
+.LM_Background {
     height: 100vh;
     width: 100vw;
     background-color: pink;
+}
+
+.Backbone {
+    height: 100%;
 }
 
