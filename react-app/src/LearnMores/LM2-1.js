@@ -1,8 +1,6 @@
 import React from "react";
 import LearnMore from '../LearnMore';
-import { H4 } from "@blueprintjs/core";
-import dna from '../Graphics/x-double-dna.png'
-import person from '../Graphics/person.png'
+import { H2, H4 } from "@blueprintjs/core";
 
 class LM_2_1 extends React.Component {
     render() {

@@ -2,9 +2,13 @@
     height: 100vh;
     width: 100vw;
     background-color: pink;
+    /*temp fix, idk what is wrong with this*/
+    font-size: 150%;
+    text-align: center;
 }
 
 .Backbone {
     height: 100%;
+    
 }
 
