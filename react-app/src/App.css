@@ -24,4 +24,5 @@
 
 body {
   position: absolute;
+  overflow:hidden;
 }
