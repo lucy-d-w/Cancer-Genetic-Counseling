@@ -6,7 +6,6 @@ import down_arrow from './Graphics/down-arrow.png'
 import up_arrow from './Graphics/up-arrow.png'
 
 
-
 class Backbone extends React.Component {
 
     render() {

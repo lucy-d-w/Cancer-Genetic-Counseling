@@ -10,7 +10,7 @@ class Backbone1 extends React.Component {
                 <H1>Genetic Testing for Hereditary Cancers</H1>
                 <div className="BB-content">
                     <div className="Main-content" style={{textalign: 'center'}}>
-                        <img src={dna} className='Main-graphic' style={{height: '40vh'}}></img>
+                        <img src={dna} className='Main-graphic' style={{height: '40vh', width: '20vw'}}></img>
                     </div>   
                 </div>
             </Backbone>

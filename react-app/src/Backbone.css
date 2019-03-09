@@ -62,7 +62,7 @@
 }
 
 .Main-graphic {
-    height: 50vh;
+    width: 100%;
     margin: 2vh;
 }
 
@@ -145,7 +145,12 @@ li {
 
 .Cover {
     position: absolute;
-    /* width: 100vw;
-    height: 100vh; */
-    /* background: green; */
+}
+
+.Close {
+    position: absolute;
+    z-index: 1;
+    right: 2vw;
+    top: 2vh;
+    height: 3vh;
 }

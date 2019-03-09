@@ -8,11 +8,13 @@ import up_arrow from './Graphics/up-arrow.png'
 
 
 
+
 class LearnMore extends React.Component {
 
     render() {
         return (
             <div className='Cover'>
+                
                 <Backbone></Backbone>
             </div>
         );
