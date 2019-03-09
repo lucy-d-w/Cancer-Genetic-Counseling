@@ -16,6 +16,7 @@ class Backbone2 extends React.Component {
         enforceFocus: true,
         isOpen: false,
         usePortal: true,
+        scrollPosition: 0,
     };
 
     targetElement = null;
@@ -36,7 +37,7 @@ class Backbone2 extends React.Component {
     showOverlay = e => {
         e.preventDefault();
         disableBodyScroll(this.targetElement);
-        this.setState({ isOpen: true });
+        this.setState({ isOpen: true, scrollPosition: window.pageYOffset });
         
         return false;
     }
@@ -44,6 +45,7 @@ class Backbone2 extends React.Component {
     closeOverlay = e => {
         e.preventDefault();
         this.setState({ isOpen: false });
+        window.scrollTo(0, this.state.scrollPosition);
         enableBodyScroll(this.targetElement);
         return false;
     }
