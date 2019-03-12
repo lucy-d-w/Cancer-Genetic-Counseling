@@ -6,7 +6,7 @@ import chart from '../Graphics/bb7-chart.png'
 class Backbone7 extends React.Component {
     render() {
         return (
-            <Backbone title="Different Genes Cause Different Risk Levels">
+            <Backbone title="Different Genes Cause Different Risk Levels" first={this.props.first} last={this.props.last}>
                 <div className="BB-content">
                     <div className="Main-content" style={{textalign: 'center'}}>
                         <img src={chart} className='Main-graphic'></img>

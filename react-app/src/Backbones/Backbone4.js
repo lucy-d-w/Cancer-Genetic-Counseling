@@ -5,7 +5,7 @@ import dna from '../Graphics/dna.png'
 class Backbone4 extends React.Component {
     render() {
         return (
-            <Backbone title="Cancer and Inherited Genes">
+            <Backbone title="Cancer and Inherited Genes" first={this.props.first} last={this.props.last}>
                 <div className="BB-content">
                     <div className="Side-columns">
                         <img src={dna}  style={{height: "50vh"}}></img>

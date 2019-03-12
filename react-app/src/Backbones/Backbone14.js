@@ -6,7 +6,7 @@ import { H4 } from "@blueprintjs/core";
 class Backbone14 extends React.Component {
     render() {
         return (
-            <Backbone title="Genetic Information Nondiscrimination Act (GINA)">
+            <Backbone title="Genetic Information Nondiscrimination Act (GINA)" first={this.props.first} last={this.props.last}>
                 <div className="BB-content">
                     <div className="Column Content-box" style={{width:'30vw'}}>
                         <H4>Covers:</H4>

@@ -6,7 +6,7 @@ import { H4 } from "@blueprintjs/core";
 class Backbone10 extends React.Component {
     render() {
         return (
-            <Backbone title="3 Types of Genetic Test Results">
+            <Backbone title="3 Types of Genetic Test Results" first={this.props.first} last={this.props.last}>
                 <div className="BB-content">
                     <div className="Column Content-box">
                         <H4>Positive</H4>

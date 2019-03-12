@@ -5,7 +5,7 @@ import chart from '../Graphics/bb9-chart.png'
 class Backbone9 extends React.Component {
     render() {
         return (
-            <Backbone title="Things to Remember...">
+            <Backbone title="Things to Remember..." first={this.props.first} last={this.props.last}>
                 <div className="BB-content">
                     <div className="Main-content" style={{textalign: 'center'}}>
                         <img src={chart} className='Main-graphic'></img>

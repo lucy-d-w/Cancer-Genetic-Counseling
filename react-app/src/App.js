@@ -29,7 +29,7 @@ class App extends Component {
       <body id="body" style={{paddingRight:{scrollBarWidth}}}>
         <div className="App">
           <header className="App-header">
-            <Backbone1 id="1"></Backbone1>
+            <Backbone1 first={true}></Backbone1>
             <Backbone2></Backbone2>
             <Backbone3></Backbone3>
             <Backbone4></Backbone4>
@@ -45,7 +45,7 @@ class App extends Component {
             <Backbone14></Backbone14>
             <Backbone15></Backbone15>
             <Backbone16></Backbone16>
-            <Backbone17></Backbone17>
+            <Backbone17 last={true}></Backbone17>
           </header>
         </div>
       </body>

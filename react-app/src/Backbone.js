@@ -11,12 +11,26 @@ class Backbone extends React.Component {
     render() {
         return (
             <div>
-                <button className="Arrow" onClick={this.scrollUp}><img src={up_arrow} /></button>
+                {!this.props.first &&
+                    <button className="Arrow" onClick={this.scrollUp}>
+                        <img src={up_arrow} />
+                    </button>}
+                {this.props.first &&
+                    <button className="Arrow" onClick={this.scrollUp} style={{ visibility: 'hidden' }}>
+                        <img src={up_arrow} />
+                    </button>}
                 <Card className="BB-body">
                     <H2 className="BB-header">{this.props.title}</H2>
                     <div className="Content">{this.props.children}</div>
                 </Card>
-               <button className="Arrow" onClick={this.scrollDown}><img src={down_arrow}/></button>
+                {!this.props.last &&
+                    <button className="Arrow" onClick={this.scrollDown}>
+                        <img src={down_arrow} />
+                    </button>}
+                {this.props.last &&
+                    <button className="Arrow" onClick={this.scrollDown} style={{ visibility: 'hidden' }}>
+                        <img src={down_arrow}/>
+                    </button>}
             </div>
         );
                     }

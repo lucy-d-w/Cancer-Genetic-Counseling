@@ -66,6 +66,11 @@
     margin: 2vh;
 }
 
+.Title {
+    width: 70vw;
+    margin: 13vh 10vw 0;
+}
+
 .Drop-down {
     background-color: #ECECEC;
     width: 60%;
@@ -104,7 +109,7 @@ li {
     text-indent: -1em;
     padding-left: 1em;
 
-    line-height: 140%;
+    line-height: 200%;
 }
 
 

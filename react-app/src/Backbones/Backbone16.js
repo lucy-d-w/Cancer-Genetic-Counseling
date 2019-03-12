@@ -4,7 +4,7 @@ import Backbone from '../Backbone';
 class Backbone16 extends React.Component {
     render() {
         return (
-            <Backbone title="What to Expect">
+            <Backbone title="What to Expect" first={this.props.first} last={this.props.last}>
                 <div className="BB-content">
                    
                     <div className={"Main-content Content-box"}>

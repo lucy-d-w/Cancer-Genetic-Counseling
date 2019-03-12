@@ -52,7 +52,7 @@ class Backbone2 extends React.Component {
     
     render() {
         return (
-        <Backbone title="Causes of Cancer">
+            <Backbone title="Causes of Cancer" first={this.props.first} last={this.props.last}>
             <div className="BB-content" id="testid">
             <div className="Main-content" style={{textalign: 'center'}}>
                 <img src={chart} className='Main-graphic' onClick={this.showOverlay}></img>

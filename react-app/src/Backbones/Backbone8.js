@@ -7,7 +7,7 @@ import person from '../Graphics/person.png'
 class Backbone8 extends React.Component {
     render() {
         return (
-            <Backbone title="Hereditary Cancers and Medical Care">
+            <Backbone title="Hereditary Cancers and Medical Care" first={this.props.first} last={this.props.last}>
                 <div className="BB-content">
                     <div className="Column Content-box">
                         <H4>Find cancer risk gene</H4>

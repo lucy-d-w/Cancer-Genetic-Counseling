@@ -14,7 +14,7 @@ class Backbone3 extends React.Component {
 
     render() {
         return (
-            <Backbone title="Signs of Hereditary Cancer">
+            <Backbone title="Signs of Hereditary Cancer" first={this.props.first} last={this.props.last}>
                 <div className="BB-content">
                     <div className="Side-column">
                         <img src={familytree} className="Graphic"></img>
