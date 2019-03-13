@@ -3,7 +3,7 @@ import Backbone from '../Backbone';
 import title from '../Graphics/title.png'
 import { H3} from "@blueprintjs/core";
 
-class Backbone1 extends React.Component {
+class Backbone1 extends Backbone {
     render() {
         return (
             <Backbone first={this.props.first} last={this.props.last}>

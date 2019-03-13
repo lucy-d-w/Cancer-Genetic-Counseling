@@ -7,7 +7,7 @@ import world from '../Graphics/world.png'
 import group from '../Graphics/group.png'
 import person from '../Graphics/person.png'
 
-class Backbone3 extends React.Component {
+class Backbone3 extends Backbone {
     state = {
         isOpen: false,
     };
@@ -20,10 +20,10 @@ class Backbone3 extends React.Component {
                         <img src={familytree} className="Graphic"></img>
                         <img src={person} className="Graphic"></img>
                     </div>
-                    <div className="Content-list Main-content">
-                        <div className="Content-box">Cancer diagnosed young</div>
-                        <div className="Content-box">Cancer in multiple family members across generations</div>
-                        <div className="Content-box" onClick={this.handleClick}>A person with multiple cancers
+                    <div className="Content-list Main-content" >
+                        <div className="Content-list-box">Cancer diagnosed young</div>
+                        <div className="Content-list-box">Cancer in multiple family members across generations</div>
+                        <div className="Content-list-box" onClick={this.handleClick}>A person with multiple cancers
                             {/* <Icon icon={IconNames.PLUS}></Icon> */}
                         </div>
                         <Collapse isOpen={this.state.isOpen}>
@@ -32,8 +32,8 @@ class Backbone3 extends React.Component {
                                 <li>Different organs</li>
                             </pre>
                         </Collapse>
-                        <div className="Content-box">Certain ethnic backgrounds</div>
-                        <div className="Content-box">Some tumor study results</div>
+                        <div className="Content-list-box">Certain ethnic backgrounds</div>
+                        <div className="Content-list-box">Some tumor study results</div>
                     </div>
                     <div className="Side-column">
                         <img src={group} className="Graphic"></img>

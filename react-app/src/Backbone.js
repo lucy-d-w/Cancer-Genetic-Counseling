@@ -31,6 +31,14 @@ class Backbone extends React.Component {
         return false;
     }
 
+    scrollDown() {
+        window.scrollBy(0, 1.0125 * window.innerHeight);
+    }
+
+    scrollUp() {
+        window.scrollBy(0, -1.0125 * window.innerHeight);
+    }
+
     render() {
         return (
             <div>
@@ -58,13 +66,6 @@ class Backbone extends React.Component {
         );
                     }
                                         
-    scrollDown() {
-        window.scrollBy(0, 1.0125*window.innerHeight);
-    }
-
-    scrollUp() {
-        window.scrollBy(0, -1.0125 * window.innerHeight);
-    }
     
 }
 
