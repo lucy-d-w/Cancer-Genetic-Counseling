@@ -5,7 +5,7 @@ import { H2, H4 } from "@blueprintjs/core";
 class LM_2_1 extends React.Component {
     render() {
         return (
-            <LearnMore title="Causes of Cancer">
+            <LearnMore title="Causes of Cancer" first={true} last={true}>
                 <div className="BB-content">
                     <div className="Column Content-box">
                         <H4>Sporadic</H4>

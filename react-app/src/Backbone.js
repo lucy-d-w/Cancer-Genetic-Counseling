@@ -7,6 +7,29 @@ import up_arrow from './Graphics/up-arrow.png'
 
 
 class Backbone extends React.Component {
+    state = {
+        autoFocus: true,
+        canEscapeKeyClose: true,
+        canOutsideClickClose: false,
+        enforceFocus: true,
+        isOpen: false,
+        usePortal: true,
+        scrollPosition: 0,
+    };
+
+    showOverlay = e => {
+        e.preventDefault();
+        this.setState({ isOpen: true, scrollPosition: window.pageYOffset });
+
+        return false;
+    }
+
+    closeOverlay = e => {
+        e.preventDefault();
+        this.setState({ isOpen: false });
+        window.scrollTo(0, this.state.scrollPosition);
+        return false;
+    }
 
     render() {
         return (

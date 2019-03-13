@@ -92,7 +92,7 @@
 }
 
 .Graphic {
-    height: 20vh;
+    width: 10vw;
     /* width: 10vw; */
     margin: 5vh 2.5vw;
     /* background-color: white; */
@@ -126,7 +126,7 @@ li {
     width: 20vw;
     margin: 5vh 2.5vw;
     box-sizing: border-box;
-    padding: 5pt 10pt;
+    padding: 1% 2%;
 }
 
 .Column H4 {

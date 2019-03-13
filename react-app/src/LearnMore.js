@@ -13,7 +13,7 @@ class LearnMore extends React.Component {
     render() {
         return (
             <div className='LM_Background'>
-                <Backbone title={this.props.title}>
+                <Backbone title={this.props.title} first={this.props.first} last={this.props.last}>
                     {this.props.children}
                 </Backbone>
             </div>
