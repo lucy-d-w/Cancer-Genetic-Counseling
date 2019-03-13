@@ -8,7 +8,7 @@ class Backbone13 extends React.Component {
             <Backbone title="Benefits & Considerations" first={this.props.first} last={this.props.last}>
                 <div className="Content">
                     <div className="Main-content" style={{textalign: 'center'}}>
-                        <img src={costbenefits} className='Main-graphic'></img>
+                        <img src={costbenefits} className='Main-graphic' style={{marginTop: -75}}></img>
                     </div>
                 </div>
             </Backbone>
