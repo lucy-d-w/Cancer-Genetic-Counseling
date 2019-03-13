@@ -18,6 +18,8 @@ import Backbone14 from './Backbones/Backbone14'
 import Backbone15 from './Backbones/Backbone15'
 import Backbone16 from './Backbones/Backbone16'
 import Backbone17 from './Backbones/Backbone17'
+import LearnMore from './LearnMore';
+
 
 class App extends Component {
   render() {

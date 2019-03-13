@@ -1,9 +1,10 @@
 import React from "react";
 import Backbone from '../Backbone';
+import end from '../Graphics/end.png'
 
 const Backbone17 = () => (
-    <Backbone title="[end slide placeholder]" last={true}>
-        <p>test</p>
+    <Backbone title=" " last={true}>
+        <img src={end} className='main-graphic'  style={{width: 300}}></img>
     </Backbone>
 )
 
