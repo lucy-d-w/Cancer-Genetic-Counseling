@@ -1,5 +1,6 @@
 import React from "react";
 import Backbone from '../Backbone';
+import pricetag from '../Graphics/pricetag.png'
 
 class Backbone15 extends React.Component {
     render() {
@@ -11,6 +12,7 @@ class Backbone15 extends React.Component {
                         <li>Health insurance</li>
                         <li>Self-pay</li>
                         <li>Financial assistance programs</li>
+                        <img src={pricetag} className='main-graphic' style={{marginTop: -10}} ></img>
                     </div>
                 
                 </div>    
