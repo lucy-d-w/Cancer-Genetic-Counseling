@@ -1,7 +1,7 @@
 import React from "react";
 import Backbone from '../Backbone';
 
-class Backbone16 extends React.Component {
+class LM_12_1 extends React.Component {
     render() {
         return (
             <Backbone title="Variants of Uncertain Significance (VUS)" first={this.props.first} last={this.props.last}>
@@ -18,4 +18,4 @@ class Backbone16 extends React.Component {
     }
 }
 
-export default Backbone16;
+export default LM_12_1;
