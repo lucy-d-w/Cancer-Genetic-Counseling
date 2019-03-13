@@ -4,7 +4,7 @@ import { H4 } from "@blueprintjs/core";
 import dna from '../Graphics/x-double-dna.png'
 import person from '../Graphics/person.png'
 
-class Backbone8 extends React.Component {
+class Backbone8 extends Backbone {
     render() {
         return (
             <Backbone title="Hereditary Cancers and Medical Care" first={this.props.first} last={this.props.last}>

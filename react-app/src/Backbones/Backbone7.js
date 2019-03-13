@@ -8,8 +8,10 @@ class Backbone7 extends React.Component {
         return (
             <Backbone title="Different Genes Cause Different Risk Levels" first={this.props.first} last={this.props.last}>
                 <div className="BB-content">
-                    <div className="Main-content" style={{textalign: 'center'}}>
-                        <img src={chart} className='Main-graphic'></img>
+                    <div className="Main-content" style={{ textalign: 'center' }}>
+                        <div className="Main-graphic-wrap">
+                            <img src={chart} className='Main-graphic'></img>
+                        </div>
                     </div>      
                 </div>
             </Backbone>

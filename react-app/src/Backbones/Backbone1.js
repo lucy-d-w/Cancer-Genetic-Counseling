@@ -10,7 +10,7 @@ class Backbone1 extends Backbone {
                 <div className="BB-content">
                     <div>
                         <img src={title} className='Title'></img>
-                        <p style={{color: 'slategray'}}>created by the Vanderbilt-Ingram Cancer Center</p>
+                        <p style={{color: 'slategray'}}>presented by the Vanderbilt-Ingram Cancer Center</p>
                     </div>
                     
                 </div>

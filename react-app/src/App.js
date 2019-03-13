@@ -19,6 +19,7 @@ import Backbone15 from './Backbones/Backbone15'
 import Backbone16 from './Backbones/Backbone16'
 import Backbone17 from './Backbones/Backbone17'
 import LearnMore from './LearnMore';
+import Quiz1 from './Quizes/Quiz1'
 
 
 class App extends Component {
@@ -33,6 +34,7 @@ class App extends Component {
           <header className="App-header">
             <Backbone1 first={true}></Backbone1>
             <Backbone2></Backbone2>
+            <Quiz1></Quiz1>
             <Backbone3></Backbone3>
             <Backbone4></Backbone4>
             <Backbone5></Backbone5>

@@ -52,7 +52,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    line-height: 10vh;
 }
 
 .Content-box {
@@ -67,7 +66,9 @@
     border-radius: 5vh;
     margin: 1vh;
     padding: 0;
+    line-height: 10vh;
 }
+
 
 .Main-content {
     align-self: center;
@@ -80,6 +81,13 @@
 .Main-graphic {
     width: 100%;
     margin: 2vh;
+}
+
+.Main-graphic-wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .Title {
@@ -148,6 +156,16 @@ li {
 
 .Column H4 {
     line-height: 1.5em;
+}
+
+.Row {
+    display: flex;
+    flex-direction: row;
+    width: 75vw;
+    margin: 5vh 5vw;
+    height: 15vh;
+    align-items: center;
+    align-content: space-between;
 }
 
 .Circle {
