@@ -9,13 +9,13 @@ class LM_4_1 extends React.Component {
             <LearnMore title="Genes:  Our Bodies' Instructions" first={true} last={true}>
                 <div className="BB-content">
                     <div className="Column" style={{ width: "25vw" }}>
-                        <div className="Content-box">
+                        <div className="LM-Content-box">
                             <p>Cells are the building blocks of our bodies</p>
                         </div>
-                        <div className="Content-box">
+                        <div className="LM-Content-box">
                             <p>Each cell has two copies of all of our genes</p>
                         </div>
-                        <div className="Content-box">
+                        <div className="LM-Content-box">
                             <p>Genes are instructions</p>
                         </div>
                     </div>
@@ -23,10 +23,10 @@ class LM_4_1 extends React.Component {
                     <img src={dna} style={{ width: "15vw", marginTop:'-5vh'}}/>
                     
                     <div className="Column" style={{ width: "25vw" }}>
-                        <div className="Content-box">
+                        <div className="LM-Content-box">
                             <p>We all have genes that help protect us from getting cancer</p>
                         </div>
-                        <div className="Content-box">
+                        <div className="LM-Content-box">
                             <p>Someone who inherits a non-working copy will have this in all of their cells</p>
                         </div>
                     </div>

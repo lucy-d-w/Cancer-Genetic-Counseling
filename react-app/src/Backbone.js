@@ -1,6 +1,6 @@
 import React from "react";
 import './Backbone.css';
-import { Card, H2, Icon } from "@blueprintjs/core";
+import { Card, H1, Icon } from "@blueprintjs/core";
 import { IconNames } from "@blueprintjs/icons";
 import down_arrow from './Graphics/down-arrow.png'
 import up_arrow from './Graphics/up-arrow.png'
@@ -32,11 +32,11 @@ class Backbone extends React.Component {
     }
 
     scrollDown() {
-        window.scrollBy(0, 1.0125 * window.innerHeight);
+        window.scrollBy(0, 1.0115 * window.innerHeight);
     }
 
     scrollUp() {
-        window.scrollBy(0, -1.0125 * window.innerHeight);
+        window.scrollBy(0, -1.011 * window.innerHeight);
     }
 
     render() {
@@ -51,7 +51,7 @@ class Backbone extends React.Component {
                         <img src={up_arrow} />
                     </button>}
                 <Card className="BB-body">
-                    <H2 className="BB-header">{this.props.title}</H2>
+                    <H1 className="BB-header">{this.props.title}</H1>
                     <div className="Content">{this.props.children}</div>
                 </Card>
                 {!this.props.last &&

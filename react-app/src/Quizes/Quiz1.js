@@ -9,14 +9,14 @@ class Quiz1 extends Backbone {
             <Backbone title="Quiz" first={this.props.first} last={this.props.last}>
                 <div className="BB-content">
                     <div className='Main-content'>
-                        <div className="Form">
+                        <div className="Form Content-list">
                             <label>Most people who get cancer were born with an inherited cancer risk gene that raised their cancer risk</label>
-                            <div style={{margin:'5vh'}}>
-                                {/*<Checkbox label="True" />
-                                <Checkbox label="False" />*/}
-                                <input style={{width:'30vw', height:'3vh'}}/>
+                            <div style={{ margin: '5vh' }}>
+                                <div style={{ textAlign: 'left' }}>
+                                <Checkbox label="True" />
+                                <Checkbox label="False" />
+                                </div>
                             </div>
-                        {/*<Button text="Submit" intent="primary" />*/}
                             
                         </div>
                     </div>

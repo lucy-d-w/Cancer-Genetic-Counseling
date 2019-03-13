@@ -19,14 +19,13 @@
     height: 85vh;
     width: 85vw;
     border-radius: 5vh;
-    margin: -4vh 7.5vw 1vh 7.5vw; /* A temp fix */
+    margin: 0vh 7.5vw 1vh 7.5vw;
 }
 
 .BB-header {
     margin: 4vh 0;
     height: 10%;
     width: 100%;
-    line-height: 200%;
     font-family: Karla;
     
 }
@@ -34,6 +33,10 @@
 .BB-content {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.Form {
     align-items: center;
 }
 
@@ -142,12 +145,12 @@ li {
     color: white;
     width: 10vw;
     border-radius: 2vh;
-    border: none;
     padding: 3%;
+    text-align: center;
 }
 
 .Column {
-    height: 60vh;
+    height: 55vh;
     width: 20vw;
     margin: 5vh 2.5vw;
     box-sizing: border-box;
@@ -184,7 +187,12 @@ li {
 }
 
 .Cover {
-    position: absolute;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+   overflow: hidden;
+
 }
 
 .Close {
