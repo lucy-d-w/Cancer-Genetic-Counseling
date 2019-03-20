@@ -12,8 +12,8 @@ class Backbone2 extends Backbone {
     render() {
         return (
             <Backbone title="Causes of Cancer" first={this.props.first} last={this.props.last}>
-            <div className="BB-content" id="testid">
-            <div className="Main-content" style={{textalign: 'center'}}>
+            <div className="BB-content">
+            <div className="Main-content">
                 <img src={chart} className='Main-graphic' onClick={this.showOverlay}></img>
                 <p>Click the chart to learn more</p>
                 <Dialog className="Cover" onClose={this.closeOverlay} {...this.state}>

@@ -4,7 +4,7 @@ import { H2, H4 } from "@blueprintjs/core";
 import dna from '../Graphics/x-double-dna.png'
 import chart from '../Graphics/lm4-2-chart.png'
 
-class LM_4_2 extends React.Component {
+class LM_4_2 extends LearnMore {
     render() {
         return (
             <LearnMore title="Genes:  Our Bodies' Instructions" first={true} last={true}>

@@ -1,7 +1,7 @@
 import React from "react";
 import Backbone from '../Backbone';
 
-class LM_12_1 extends React.Component {
+class LM_12_1 extends LearnMore {
     render() {
         return (
             <Backbone title="Variants of Uncertain Significance (VUS)" first={this.props.first} last={this.props.last}>

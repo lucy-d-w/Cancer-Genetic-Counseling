@@ -2,7 +2,7 @@ import React from "react";
 import LearnMore from '../LearnMore';
 import { H2, H4 } from "@blueprintjs/core";
 
-class LM_2_1 extends React.Component {
+class LM_2_1 extends LearnMore {
     render() {
         return (
             <LearnMore title="Causes of Cancer" first={true} last={true}>
@@ -23,7 +23,8 @@ class LM_2_1 extends React.Component {
                         <li>Cancer risk is very high regardless of lifestyle or environment</li>
                     </div>
 
-                </div></LearnMore>
+                </div>
+            </LearnMore>
         );
     }
 }

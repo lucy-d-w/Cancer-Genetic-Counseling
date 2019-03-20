@@ -12,7 +12,7 @@ class Backbone15 extends React.Component {
                         <li>Health insurance</li>
                         <li>Self-pay</li>
                         <li>Financial assistance programs</li>
-                        <img src={pricetag} className='main-graphic' style={{marginTop: -10}} ></img>
+                        <img src={pricetag} className='main-graphic' style={{marginTop: '3vh'}} ></img>
                     </div>
                 
                 </div>    

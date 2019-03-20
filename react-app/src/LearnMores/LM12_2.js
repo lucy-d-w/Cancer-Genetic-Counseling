@@ -1,7 +1,7 @@
 import React from "react";
 import Backbone from '../Backbone';
 
-class LM_12_2 extends React.Component {
+class LM_12_2 extends LearnMore {
     render() {
         return (
             <Backbone title="Negative Results" first={this.props.first} last={this.props.last}>

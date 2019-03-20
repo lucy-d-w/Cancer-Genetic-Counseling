@@ -3,12 +3,12 @@ import LearnMore from '../LearnMore';
 import { H2, H4 } from "@blueprintjs/core";
 import dna from '../Graphics/x-double-dna.png'
 
-class LM_4_1 extends React.Component {
+class LM_4_1 extends LearnMore {
     render() {
         return (
             <LearnMore title="Genes:  Our Bodies' Instructions" first={true} last={true}>
                 <div className="BB-content">
-                    <div className="Column" style={{ width: "25vw" }}>
+                    <div className="Column" style={{ width: "25vw", marginTop:'0vh' }}>
                         <div className="LM-Content-box">
                             <p>Cells are the building blocks of our bodies</p>
                         </div>
@@ -20,9 +20,9 @@ class LM_4_1 extends React.Component {
                         </div>
                     </div>
                     
-                    <img src={dna} style={{ width: "15vw", marginTop:'-5vh'}}/>
+                    <img src={dna} style={{ width: "15vw", marginTop:'0vh'}}/>
                     
-                    <div className="Column" style={{ width: "25vw" }}>
+                    <div className="Column" style={{ width: "25vw", marginTop: '0vh' }}>
                         <div className="LM-Content-box">
                             <p>We all have genes that help protect us from getting cancer</p>
                         </div>

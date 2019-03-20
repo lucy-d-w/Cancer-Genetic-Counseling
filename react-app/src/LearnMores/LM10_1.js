@@ -3,7 +3,7 @@ import LearnMore from '../LearnMore';
 import { H2, H4 } from "@blueprintjs/core";
 import testingFamily from '../Graphics/testingFamily.png'
 
-class LM_10_1 extends React.Component {
+class LM_10_1 extends LearnMore {
     render() {
         return (
             <LearnMore title="Who should be tested first?" first={true} last={true}>

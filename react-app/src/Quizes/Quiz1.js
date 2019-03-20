@@ -13,8 +13,9 @@ class Quiz1 extends Backbone {
                             <label>Most people who get cancer were born with an inherited cancer risk gene that raised their cancer risk</label>
                             <div style={{ margin: '5vh' }}>
                                 <div style={{ textAlign: 'left' }}>
-                                <Checkbox label="True" />
-                                <Checkbox label="False" />
+                                <Checkbox label="I agree" />
+                                    <Checkbox label="I disagree" />
+                                    <Checkbox label="I don't know" />
                                 </div>
                             </div>
                             
