@@ -1,11 +1,13 @@
 import React from "react";
 import Backbone from '../Backbone';
 import chart from '../Graphics/bb5-chart.png'
-import x from '../Graphics/x.png'
 import LM_5_1 from '../LearnMores/LM5-1'
 import LM_5_2 from '../LearnMores/LM5-2'
 import LM_5_3 from '../LearnMores/LM5-3'
-import { H2, Button, Dialog, Classes } from "@blueprintjs/core";
+import Overlay from '../LearnMores/Overlay'
+import { Button, Dialog, Classes } from "@blueprintjs/core";
+
+import x from '../Graphics/x.png'
 
 class Backbone5 extends Backbone {
     render() {

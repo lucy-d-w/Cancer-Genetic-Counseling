@@ -5,6 +5,9 @@ import { IconNames } from "@blueprintjs/icons";
 import down_arrow from './Graphics/down-arrow.png'
 import up_arrow from './Graphics/up-arrow.png'
 
+import LM_4_1 from './LearnMores/LM4-1'
+import LM_4_2 from './LearnMores/LM4-2'
+
 
 class Backbone extends React.Component {
     state = {
@@ -15,17 +18,24 @@ class Backbone extends React.Component {
         isOpen: false,
         usePortal: true,
         scrollPosition: 0,
+        overlay: 0
     };
 
-    showOverlay = e => {
-        e.preventDefault();
-        this.setState({ isOpen: true, scrollPosition: window.pageYOffset });
+    getOverlay = id => {
+        if (id == 4.1) {
+            return <LM_4_1/>
+        }
+        else if (id == 4.2) {
+            return <LM_4_2 />
+        }
+    }
 
+    showOverlay = id => {
+        this.setState({ isOpen: true, scrollPosition: window.pageYOffset, overlay: id });
         return false;
     }
 
     closeOverlay = e => {
-        e.preventDefault();
         this.setState({ isOpen: false });
         window.scrollTo(0, this.state.scrollPosition);
         return false;

@@ -10,7 +10,7 @@ import up_arrow from './Graphics/up-arrow.png'
 
 
 
-class LearnMore extends Backbone {
+class LearnMore extends React.Component {
     render() {
         return (
             <Backbone title={this.props.title} first={this.props.first} last={this.props.last}>
