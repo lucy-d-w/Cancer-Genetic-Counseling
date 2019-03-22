@@ -34,7 +34,7 @@ class Backbone4 extends Backbone {
                         <Dialog className="Cover" onClose={this.closeOverlay} {...this.state}>
                             <div className={Classes.DIALOG_BODY}>
                                 <img src={x} className="Close" onClick={this.closeOverlay} />
-                                <LM_4_1></LM_4_1> {/*FIX MEEEEEEEEEEE*/}
+                                <LM_4_2></LM_4_2> {/*FIX MEEEEEEEEEEE*/}
                             </div>
                         </Dialog>
                     </div>
