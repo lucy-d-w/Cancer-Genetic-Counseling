@@ -11,8 +11,8 @@ class Backbone8 extends Backbone {
     render() {
         return (
             <Backbone title="Hereditary Cancers and Medical Care" first={this.props.first} last={this.props.last}>
-                <div className="BB-content">
-                   
+                <div className="Row">
+                    <div className="BB-content" style={{ height: '50vh' }}>
                         <div className="Column Content-box">
                             <H2>Find cancer risk gene</H2>
                             <img src={dna} style={{ height: '50%', marginTop:'6vh' }}></img>
@@ -23,14 +23,15 @@ class Backbone8 extends Backbone {
                         </div>
                         <div className="Column Content-box">
                             <H2>Provide better medical care</H2>
-                       
                             <li style={{ marginTop: '6vh' }}>Cancer prevention</li>
                             <li>Early detection</li>
                             <li>Cancer treatment</li>
                         </div>
-                        
-                    <div className="Stacked">
-                        <Button className="LM-button" onClick={this.showOverlay}>Learn More: Breast and Ovarian Cancer</Button>
+                    </div>
+                </div>
+                <div className="Row">
+                    <div className="BB-content" style={{ height: '5vh' }}>    
+                        <Button className="LM-button" onClick={this.showOverlay}>Learn More: Breast & Ovarian Cancer</Button>
                         <Dialog className="Cover" onClose={this.closeOverlay} {...this.state}>
                             <div className={Classes.DIALOG_BODY}>
                                 <img src={x} className="Close" onClick={this.closeOverlay} />
