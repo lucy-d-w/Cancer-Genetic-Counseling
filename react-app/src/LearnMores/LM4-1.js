@@ -1,6 +1,5 @@
 import React from "react";
 import LearnMore from '../LearnMore';
-import { H2, H4 } from "@blueprintjs/core";
 import dna from '../Graphics/x-double-dna.png'
 
 class LM_4_1 extends LearnMore {
