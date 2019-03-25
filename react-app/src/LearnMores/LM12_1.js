@@ -1,5 +1,6 @@
 import React from "react";
 import Backbone from '../Backbone';
+import LearnMore from '../LearnMore';
 
 class LM_12_1 extends LearnMore {
     render() {
