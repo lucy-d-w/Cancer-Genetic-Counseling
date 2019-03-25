@@ -1,6 +1,6 @@
 import React from "react";
 import Backbone from '../Backbone';
-import blood from '../Graphics/blood.png'
+import testTube from '../Graphics/testTube.png'
 
 class Backbone16 extends React.Component {
     render() {
@@ -14,7 +14,7 @@ class Backbone16 extends React.Component {
                         <li>Provide a blood/saliva sample for testing</li>
                         <li>Test results usually available within a few weeks</li>
                         <li>These results can help personalize your care</li>
-                        <img src={blood} className='Graphic' style={{width:400, marginTop: -20, marginLeft: 150}}></img>
+                        <img src={testTube} className='Graphic' style={{width:180, marginTop: -10}}></img>
                     </div>
                    
                 </div>    
