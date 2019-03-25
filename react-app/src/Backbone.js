@@ -41,36 +41,44 @@ class Backbone extends React.Component {
     }
 
     scrollDown() {
-        window.scrollBy(0, 1.0115 * window.innerHeight);
+        /*window.scrollBy(0, 1.0115 * window.innerHeight);*/
+        window.scrollBy(0, window.innerHeight);
     }
 
     scrollUp() {
-        window.scrollBy(0, -1.011 * window.innerHeight);
+        /*window.scrollBy(0, -1.011 * window.innerHeight);*/
+        window.scrollBy(0, -1 * window.innerHeight);
     }
 
     render() {
         return (
-            <div>
-                {!this.props.first &&
-                    <button className="Arrow" onClick={this.scrollUp}>
-                        <img src={up_arrow} />
-                    </button>}
-                {this.props.first &&
-                    <button className="Arrow" onClick={this.scrollUp} style={{ visibility: 'hidden' }}>
-                        <img src={up_arrow} />
-                    </button>}
-                <Card className="BB-body">
-                    <H1 className="BB-header">{this.props.title}</H1>
-                    <div className="Content">{this.props.children}</div>
-                </Card>
-                {!this.props.last &&
-                    <button className="Arrow" onClick={this.scrollDown}>
-                        <img src={down_arrow} />
-                    </button>}
-                {this.props.last &&
-                    <button className="Arrow" onClick={this.scrollDown} style={{ visibility: 'hidden' }}>
-                        <img src={down_arrow}/>
-                    </button>}
+            <div className="Page-wrap">
+                <div >
+                    {!this.props.first &&
+                        <button className="Arrow" onClick={this.scrollUp}>
+                            <img src={up_arrow} />
+                        </button>}
+                    {this.props.first &&
+                        <button className="Arrow" onClick={this.scrollUp} style={{ visibility: 'hidden' }}>
+                            <img src={up_arrow} />
+                            </button>}
+                </div>
+                <div className="H-centered">
+                    <Card className="BB-body">
+                        <H1 className="BB-header">{this.props.title}</H1>
+                        <div className="Content">{this.props.children}</div>
+                    </Card>
+                </div>
+                <div >
+                    {!this.props.last &&
+                        <button className="Arrow" onClick={this.scrollDown}>
+                            <img src={down_arrow} />
+                        </button>}
+                    {this.props.last &&
+                        <button className="Arrow" onClick={this.scrollDown} style={{ visibility: 'hidden' }}>
+                            <img src={down_arrow}/>
+                        </button>}
+                </div>
             </div>
         );
                     }

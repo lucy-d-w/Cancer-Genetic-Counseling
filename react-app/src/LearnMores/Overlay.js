@@ -15,7 +15,7 @@ class Overlay extends Backbone {
                         <img src={x} className="Close" onClick={this.closeOverlay} />
                         {this.getOverlay(this.props.over)}
                     </div>
-                    </Dialog>
+                </Dialog>
             </div>
         );
     }

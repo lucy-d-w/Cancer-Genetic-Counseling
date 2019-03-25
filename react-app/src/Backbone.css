@@ -14,12 +14,18 @@
     text-align: center;
 }
 
+.Page-wrap {
+    height: 100vh;
+    width: 100vw;
+}
+
 .BB-body {
     background-color: #9EDFE6;
     height: 85vh;
     width: 85vw;
     border-radius: 5vh;
-    margin: 0vh 7.5vw 1vh 7.5vw;
+   margin: 0vh 7.5vw 0vh 7.5vw;
+  
 }
 
 .BB-header {
@@ -171,9 +177,13 @@ li {
 .H-centered {
     display: flex;
     flex-direction: row;
-    /*width: 75vw;
-    margin: 5vh 5vw;
-    height: 15vh;*/
+    align-items: center;
+    align-content: space-between;
+}
+
+.V-centered {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     align-content: space-between;
 }
@@ -190,9 +200,10 @@ li {
 .Cover {
     /*overflow: hidden;*/
     background-color: white;
-    height: 100%;
-    width: 98vw;
-    margin: 1vh 1vw;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
     /*temp fix, idk what is wrong with this*/
     font-size: 175%;
     text-align: center;
