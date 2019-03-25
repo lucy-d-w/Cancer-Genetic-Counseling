@@ -35,8 +35,6 @@ class Backbone8 extends Backbone {
                         <Dialog className="Cover" onClose={this.closeOverlay} {...this.state}>
                             <div className={Classes.DIALOG_BODY}>
                                 <img src={x} className="Close" onClick={this.closeOverlay} />
-                                <LM_8_1></LM_8_1>
-                                <LM_8_2></LM_8_2>
                             </div>
                         </Dialog>
                         <Button className="LM-button" onClick={this.showOverlay}>Learn More: Colorectal Cancer</Button>

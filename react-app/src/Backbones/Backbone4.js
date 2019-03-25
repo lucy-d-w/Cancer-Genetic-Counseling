@@ -5,6 +5,7 @@ import { Button } from "@blueprintjs/core";
 import { Classes, Dialog } from "@blueprintjs/core";
 import LM_4_1 from '../LearnMores/LM4-1'
 import LM_4_2 from '../LearnMores/LM4-2'
+import Overlay from '../LearnMores/Overlay'
 import x from '../Graphics/x.png'
 
 class Backbone4 extends Backbone {
@@ -15,13 +16,7 @@ class Backbone4 extends Backbone {
                 <div className="BB-content">
                     <div className="Side-columns">
                         <img src={dna}  style={{height: "50vh"}}></img>
-                        <Button className="LM-button" onClick={() => this.showOverlay(4.1)}>Learn More: Basic Genetics</Button>
-                        <Dialog className="Cover" onClose={this.closeOverlay} {...this.state}>
-                            <div className={Classes.DIALOG_BODY}>
-                                <img src={x} className="Close" onClick={this.closeOverlay} />
-                                {this.getOverlay(this.state.overlay)}
-                            </div>
-                        </Dialog>
+                        <Overlay text="Learn More: Basic Genetics" over={LM_4_1} />
                     </div>
                     <div className={"Main-content Content-box"}>
                         <li>Some of the genes we inherit help stop cancer</li>
@@ -31,13 +26,7 @@ class Backbone4 extends Backbone {
                     </div>
                     <div className="Side-columns">
                         <img src={dna}  style={{height: "50vh"}}></img>
-                        <Button className="LM-button" onClick={() => this.showOverlay(4.2)}>Learn More: How Genes are Inherited</Button>
-                        <Dialog className="Cover" onClose={this.closeOverlay} {...this.state}>
-                            <div className={Classes.DIALOG_BODY}>
-                                <img src={x} className="Close" onClick={this.closeOverlay} />
-                                {this.getOverlay(this.state.overlay)}
-                            </div>
-                        </Dialog>
+                        <Overlay text="Learn More: How Genes are Inherited" over={LM_4_2} />
                     </div>
                 </div>    
             </Backbone>

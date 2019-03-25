@@ -19,13 +19,13 @@ class LM_4_2 extends LearnMore {
                 </div>
                 <div className="Row">
                     <div className="H-centered">
-                        <div className="Content-box">
+                        <div className="LM-Content-box">
                             <p>Genes are inherited from our parents</p>
                         </div>
-                        <div className="Content-box">
+                        <div className="LM-Content-box">
                             <p>We can inherit a non-working copy (mutation) from either our mother or our father </p>
                         </div>
-                        <div className="Content-box">
+                        <div className="LM-Content-box">
                             <p>This is called autosomal dominant inheritance </p>
                         </div>
                     </div>

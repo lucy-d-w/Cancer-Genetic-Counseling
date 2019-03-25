@@ -3,11 +3,11 @@ import Backbone from '../Backbone';
 import chart from '../Graphics/bb5-chart.png'
 import LM_5_1 from '../LearnMores/LM5-1'
 import LM_5_2 from '../LearnMores/LM5-2'
-import LM_5_3 from '../LearnMores/LM5-3'
 import Overlay from '../LearnMores/Overlay'
 import { Button, Dialog, Classes } from "@blueprintjs/core";
 
 import x from '../Graphics/x.png'
+
 
 class Backbone5 extends Backbone {
     render() {
@@ -28,10 +28,15 @@ class Backbone5 extends Backbone {
                         <Dialog className="Cover" onClose={this.closeOverlay} {...this.state}>
                             <div className={Classes.DIALOG_BODY}>
                                 <img src={x} className="Close" onClick={this.closeOverlay} />
-                                <LM_5_1></LM_5_1>
+                               
                             </div>
                         </Dialog>
                         <Button className="LM-button" onClick={this.showOverlay}>Learn More: Types of Testing</Button>
+                        <Dialog className="Cover" onClose={this.closeOverlay} {...this.state}>
+                            <div className={Classes.DIALOG_BODY}>
+                                <img src={x} className="Close" onClick={this.closeOverlay} />
+                            </div>
+                        </Dialog>
                     </div>
                 </div>
             </Backbone>

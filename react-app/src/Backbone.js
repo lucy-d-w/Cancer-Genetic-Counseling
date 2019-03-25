@@ -4,9 +4,14 @@ import { Card, H1, Icon } from "@blueprintjs/core";
 import { IconNames } from "@blueprintjs/icons";
 import down_arrow from './Graphics/down-arrow.png'
 import up_arrow from './Graphics/up-arrow.png'
+import parse from 'html-react-parser';
 
 import LM_4_1 from './LearnMores/LM4-1'
 import LM_4_2 from './LearnMores/LM4-2'
+import LM_5_1 from './LearnMores/LM5-1'
+import LM_5_2 from './LearnMores/LM5-2'
+import LM_8_1 from './LearnMores/LM8-1'
+import LM_8_2 from './LearnMores/LM8-2'
 
 
 class Backbone extends React.Component {
@@ -18,20 +23,15 @@ class Backbone extends React.Component {
         isOpen: false,
         usePortal: true,
         scrollPosition: 0,
-        overlay: 0
+
     };
 
     getOverlay = id => {
-        if (id == 4.1) {
-            return <LM_4_1/>
-        }
-        else if (id == 4.2) {
-            return <LM_4_2 />
-        }
+        return React.createElement(id);
     }
 
     showOverlay = id => {
-        this.setState({ isOpen: true, scrollPosition: window.pageYOffset, overlay: id });
+        this.setState({ isOpen: true, scrollPosition: window.pageYOffset });
         return false;
     }
 
