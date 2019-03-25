@@ -1,6 +1,6 @@
 import React from "react";
 import Backbone from '../Backbone';
-import who from '../Graphics/who.png'
+import implications from '../Graphics/implications.png'
 
 class Backbone12 extends React.Component {
     render() {
@@ -8,7 +8,7 @@ class Backbone12 extends React.Component {
             <Backbone title="What about a variant of uncertain significance (VUS) or negative result?" first={this.props.first} last={this.props.last}>
                 <div className="Content">
                     <div className="Main-content" style={{textalign: 'center'}}>
-                        <img src={who} className='Main-graphic'></img>
+                        <img src={implications} className='Main-graphic'></img>
                     </div>
                 </div>
             </Backbone>
