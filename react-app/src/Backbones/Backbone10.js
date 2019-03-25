@@ -19,7 +19,7 @@ class Backbone10 extends React.Component {
                     <div className="Column Content-box" style={{width:"25vw"}}>
                         <H2>Variant of Uncertain Significance</H2>
                         <li>Gene change; risk of inherited cancer is unknown.</li>
-                        <img src={question} className='Graphic' style={{marginTop: -2}}></img>
+                        <img src={question} className='Graphic' style={{marginTop: 15}}></img>
                     </div>
                     <div className="Column Content-box">
                         <H2>Negative</H2>
