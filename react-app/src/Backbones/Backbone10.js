@@ -4,16 +4,18 @@ import { H2 } from "@blueprintjs/core";
 import plus from '../Graphics/plus.png'
 import question from '../Graphics/question.png'
 import minus from '../Graphics/minus.png'
+import LM_10_1 from '../LearnMores/LM10_1'
+import Overlay from '../LearnMores/Overlay'
 
 
 class Backbone10 extends React.Component {
     render() {
         return (
             <Backbone title="3 Types of Genetic Test Results" first={this.props.first} last={this.props.last}>
-                <div className="BB-content">
+                <div className="BB-content"  style={{marginTop: -3}}>
                     <div className="Column Content-box">
                         <H2>Positive</H2>
-                        <li>Gene mutation found; increased cancer risk.</li>
+                        <li>Gene mutation found; increased cancer risk. </li>
                         <img src={plus} className='Graphic' style={{marginTop: -1}}></img>
                     </div>
                     <div className="Column Content-box" style={{width:"25vw"}}>
@@ -26,7 +28,13 @@ class Backbone10 extends React.Component {
                         <li>No mutation found; inherited cancer unlikely.</li>
                         <img src={minus} className='Graphic'></img>
                     </div>
-                </div>
+                    </div>
+
+                    <div class="row" style={{marginTop: -25}}>
+                    <Overlay text="Learn More: Who to test first?" over={LM_10_1} />
+                    </div>
+                    
+    
             </Backbone>
         );
     }
