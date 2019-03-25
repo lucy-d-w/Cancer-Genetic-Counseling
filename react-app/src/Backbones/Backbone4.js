@@ -1,12 +1,9 @@
 import React from "react";
 import Backbone from '../Backbone';
 import dna from '../Graphics/dna.png'
-import { Button } from "@blueprintjs/core";
-import { Classes, Dialog } from "@blueprintjs/core";
 import LM_4_1 from '../LearnMores/LM4-1'
 import LM_4_2 from '../LearnMores/LM4-2'
 import Overlay from '../LearnMores/Overlay'
-import x from '../Graphics/x.png'
 
 class Backbone4 extends Backbone {
 

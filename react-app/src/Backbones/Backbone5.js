@@ -4,9 +4,6 @@ import chart from '../Graphics/bb5-chart.png'
 import LM_5_1 from '../LearnMores/LM5-1'
 import LM_5_2 from '../LearnMores/LM5-2'
 import Overlay from '../LearnMores/Overlay'
-import { Button, Dialog, Classes } from "@blueprintjs/core";
-
-import x from '../Graphics/x.png'
 
 
 class Backbone5 extends Backbone {
@@ -24,19 +21,8 @@ class Backbone5 extends Backbone {
                 </div>
                 <div className="Row">
                     <div className="BB-content" style={{ height: '5vh' }}>
-                        <Button className="LM-button" onClick={this.showOverlay}>Learn More: Cancer Risk Genes</Button>
-                        <Dialog className="Cover" onClose={this.closeOverlay} {...this.state}>
-                            <div className={Classes.DIALOG_BODY}>
-                                <img src={x} className="Close" onClick={this.closeOverlay} />
-                               
-                            </div>
-                        </Dialog>
-                        <Button className="LM-button" onClick={this.showOverlay}>Learn More: Types of Testing</Button>
-                        <Dialog className="Cover" onClose={this.closeOverlay} {...this.state}>
-                            <div className={Classes.DIALOG_BODY}>
-                                <img src={x} className="Close" onClick={this.closeOverlay} />
-                            </div>
-                        </Dialog>
+                        <Overlay text="Learn More: Cancer Risk Genes" over={LM_5_1} />
+                        <Overlay text="Learn More: Types of Testing" over={LM_5_2} />
                     </div>
                 </div>
             </Backbone>
