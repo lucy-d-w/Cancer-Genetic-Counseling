@@ -4,7 +4,6 @@ import { Card, H1, Icon } from "@blueprintjs/core";
 import { IconNames } from "@blueprintjs/icons";
 import down_arrow from './Graphics/down-arrow.png'
 import up_arrow from './Graphics/up-arrow.png'
-import parse from 'html-react-parser';
 
 import LM_4_1 from './LearnMores/LM4-1'
 import LM_4_2 from './LearnMores/LM4-2'
