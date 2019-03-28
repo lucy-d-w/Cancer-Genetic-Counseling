@@ -9,8 +9,8 @@ class LM_12_1 extends LearnMore {
                 <div className="Content">
                    
                     <div className={"Main-content Content-box"}>
-                        <li>VUS results are common when testing many genes at one time</li>
-                        <li>Most VUS results are reclassified as negative as we learn more about them</li>
+                        <li>VUS results are common when testing many genes at one time.</li>
+                        <li>Most VUS results are reclassified as negative as we learn more about them.</li>
                     </div>
                    
                 </div>    
