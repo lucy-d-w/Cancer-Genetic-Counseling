@@ -22,7 +22,6 @@ import Backbone14 from './Backbones/Backbone14'
 import Backbone15 from './Backbones/Backbone15'
 import Backbone16 from './Backbones/Backbone16'
 import Backbone17 from './Backbones/Backbone17'
-import LearnMore from './LearnMore';
 import Quiz1 from './Quizes/Quiz1'
 import Quiz2 from './Quizes/Quiz2'
 import Quiz3 from './Quizes/Quiz3'
@@ -33,49 +32,78 @@ import Quiz7 from './Quizes/Quiz7'
 import Quiz8 from './Quizes/Quiz8'
 import Quiz9 from './Quizes/Quiz9'
 
+import Track1 from './Track1'
+import Track2 from './Track2'
+import Track3 from './Track3'
+
 
 class App extends Component {
-  render() {
-    const documentWidth = document.body.clientWidth;
-    const windowWidth = window.innerWidth;
-    const scrollBarWidth = windowWidth - documentWidth;
-    // const scrollBarWidth = document.getElementById("body").offsetWidth - this.body.clientWidth;
-    return (
-      <body id="body" style={{paddingRight:{scrollBarWidth}}}>
-        <div className="App">
-          <header className="App-header">
-            <Backbone1></Backbone1>
-            <Backbone2></Backbone2>
-            <Quiz1></Quiz1>
-            <Backbone3></Backbone3>
-            <Backbone4></Backbone4>
-            <Quiz2></Quiz2>
-            <Backbone5></Backbone5>
-            <Quiz3></Quiz3>
-            <Backbone6></Backbone6>
-            <Backbone7></Backbone7>
-            <Quiz4></Quiz4>
-            <Quiz5></Quiz5>
-            <Backbone8></Backbone8>
-            <Quiz6></Quiz6>
-            <Quiz7></Quiz7>
-            <Quiz8></Quiz8>
-            <Backbone9></Backbone9>
-            <Backbone10></Backbone10>
-            <Quiz9></Quiz9>
-            <Backbone11></Backbone11>
-            <Backbone12></Backbone12>
-            <Backbone13_1></Backbone13_1>
-            <Backbone13_2></Backbone13_2>
-            <Backbone14></Backbone14>
-            <Backbone15></Backbone15>
-            <Backbone16></Backbone16>
-            <Backbone17></Backbone17>
-          </header>
-        </div>
-      </body>
-    );
-  }
+    
+    
+
+
+    render() {
+        const documentWidth = document.body.clientWidth;
+        const windowWidth = window.innerWidth;
+        const scrollBarWidth = windowWidth - documentWidth;
+
+       
+        const trackID = 3;
+        var track;
+        if (trackID == 1) {
+            track = <Track1 />;
+        } else if (trackID == 2) {
+            track = <Track2 />;
+        } else {
+            track = <Track3 />;
+        }
+        
+        return (
+            <body id="body" style={{ paddingRight: { scrollBarWidth } }}>
+                <div className="App">
+                    <header className="App-header">
+                        <div>{track}</div>
+                    </header>
+                </div>
+            </body>
+        );
+    }
+
+    /*Master slide list:
+     <Backbone1></Backbone1>
+    <Backbone2></Backbone2>
+    <Quiz1></Quiz1>
+    <Backbone3></Backbone3>
+    <Backbone4></Backbone4>
+    <Quiz2></Quiz2>
+    <Backbone5></Backbone5>
+    <Quiz3></Quiz3>
+    <Backbone6></Backbone6>
+    <Backbone7></Backbone7>
+    <Quiz4></Quiz4>
+    <Quiz5></Quiz5>
+    <Backbone8></Backbone8>
+    <Quiz6></Quiz6>
+    <Quiz7></Quiz7>
+    <Quiz8></Quiz8>
+    <Backbone9></Backbone9>
+    <Backbone10></Backbone10>
+    <Quiz9></Quiz9>
+    <Backbone11></Backbone11>
+    <Backbone12></Backbone12>
+    <Quiz10></Quiz10>
+    <Backbone13_1></Backbone13_1>
+    <Backbone13_2></Backbone13_2>
+    <Quiz11></Quiz11>
+    <Quiz12></Quiz12>
+    <Backbone14></Backbone14>
+    <Quiz13></Quiz13>
+    <Quiz14></Quiz14>
+    <Quiz15></Quiz15>
+    <Backbone15></Backbone15>
+    <Backbone16></Backbone16>
+    <Backbone17></Backbone17>*/
+
 }
 
 export default App;

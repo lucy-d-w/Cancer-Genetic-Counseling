@@ -3,6 +3,7 @@ import Backbone from '../Backbone';
 import chart from '../Graphics/bb5-chart.png'
 import LM_5_1 from '../LearnMores/LM5-1'
 import LM_5_2 from '../LearnMores/LM5-2'
+import LM_5_3 from '../LearnMores/LM5-3'
 import Overlay from '../LearnMores/Overlay'
 
 

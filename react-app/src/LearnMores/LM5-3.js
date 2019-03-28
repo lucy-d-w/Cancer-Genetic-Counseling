@@ -5,7 +5,7 @@ import { H2 } from "@blueprintjs/core";
 class LM_5_3 extends LearnMore {
     render() {
         return (
-            <LearnMore title="How Genes Cause Cancer" first={true} last={true}>
+            <LearnMore title="How Genes Cause Cancer" first={false} last={false}> {/*FIX!!!!*/}
                 <div className="BB-content">
 
                 </div>
