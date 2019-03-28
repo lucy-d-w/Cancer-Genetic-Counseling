@@ -24,6 +24,14 @@ import Backbone16 from './Backbones/Backbone16'
 import Backbone17 from './Backbones/Backbone17'
 import LearnMore from './LearnMore';
 import Quiz1 from './Quizes/Quiz1'
+import Quiz2 from './Quizes/Quiz2'
+import Quiz3 from './Quizes/Quiz3'
+import Quiz4 from './Quizes/Quiz4'
+import Quiz5 from './Quizes/Quiz5'
+import Quiz6 from './Quizes/Quiz6'
+import Quiz7 from './Quizes/Quiz7'
+import Quiz8 from './Quizes/Quiz8'
+import Quiz9 from './Quizes/Quiz9'
 
 
 class App extends Component {
@@ -36,17 +44,25 @@ class App extends Component {
       <body id="body" style={{paddingRight:{scrollBarWidth}}}>
         <div className="App">
           <header className="App-header">
-            <Backbone1 first={true}></Backbone1>
+            <Backbone1></Backbone1>
             <Backbone2></Backbone2>
             <Quiz1></Quiz1>
             <Backbone3></Backbone3>
             <Backbone4></Backbone4>
+            <Quiz2></Quiz2>
             <Backbone5></Backbone5>
+            <Quiz3></Quiz3>
             <Backbone6></Backbone6>
             <Backbone7></Backbone7>
+            <Quiz4></Quiz4>
+            <Quiz5></Quiz5>
             <Backbone8></Backbone8>
+            <Quiz6></Quiz6>
+            <Quiz7></Quiz7>
+            <Quiz8></Quiz8>
             <Backbone9></Backbone9>
             <Backbone10></Backbone10>
+            <Quiz9></Quiz9>
             <Backbone11></Backbone11>
             <Backbone12></Backbone12>
             <Backbone13_1></Backbone13_1>
@@ -54,7 +70,7 @@ class App extends Component {
             <Backbone14></Backbone14>
             <Backbone15></Backbone15>
             <Backbone16></Backbone16>
-            <Backbone17 last={true}></Backbone17>
+            <Backbone17></Backbone17>
           </header>
         </div>
       </body>

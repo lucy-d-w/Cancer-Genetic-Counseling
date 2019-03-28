@@ -1,28 +1,11 @@
 import React from 'react';
-import Backbone from '../Backbone';
-import { InputGroup, Checkbox, Button } from "@blueprintjs/core";
+import Quiz from '../Quiz';
 
 
-class Quiz1 extends Backbone {
+class Quiz1 extends Quiz {
     render() {
         return (
-            <Backbone title="Quiz" first={this.props.first} last={this.props.last}>
-                <div className="BB-content">
-                    <div className='Main-content'>
-                        <div className="Form Content-list">
-                            <label>Most people who get cancer were born with an inherited cancer risk gene that raised their cancer risk</label>
-                            <div style={{ margin: '5vh' }}>
-                                <div style={{ textAlign: 'left' }}>
-                                <Checkbox label="I agree" />
-                                    <Checkbox label="I disagree" />
-                                    <Checkbox label="I don't know" />
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-				</div>
-            </Backbone>
+            <Quiz question="Most people who get cancer were born with an inherited cancer risk gene that raised their cancer risk." />
         );
     }
 }
