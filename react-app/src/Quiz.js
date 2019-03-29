@@ -6,7 +6,7 @@ import { Checkbox } from "@blueprintjs/core";
 class Quiz extends Backbone {
     render() {
         return (
-            <Backbone title="Quiz" first={this.props.first} last={this.props.last}>
+            <Backbone title="Knowledge Check" first={this.props.first} last={this.props.last}>
                 <div className="BB-content">
                     <div className='Main-content'>
                         <div className="Form Content-list">

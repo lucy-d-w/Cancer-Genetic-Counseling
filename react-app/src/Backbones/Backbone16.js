@@ -1,6 +1,6 @@
 import React from "react";
 import Backbone from '../Backbone';
-import testTube from '../Graphics/testTube.png'
+import blood from '../Graphics/blood.png'
 import LM_16_1 from '../LearnMores/LM16_1'
 import Overlay from '../LearnMores/Overlay'
 import { ALIGN_CENTER } from "@blueprintjs/icons/lib/esm/generated/iconNames";
@@ -17,7 +17,7 @@ class Backbone16 extends React.Component {
                         <li>Provide a blood/saliva sample for testing</li>
                         <li>Test results usually available within a few weeks</li>
                         <li>These results can help personalize your care</li>
-                        <img src={testTube} className='Graphic' style={{width:180, marginTop: -10}}></img>
+                        <img src={blood} className='Graphic' style={{width:180, marginTop: -10}}></img>
                     </div>
                    
                 </div>    

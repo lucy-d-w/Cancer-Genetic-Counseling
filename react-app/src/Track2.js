@@ -26,6 +26,13 @@ import Quiz6 from './Quizes/Quiz6'
 import Quiz7 from './Quizes/Quiz7'
 import Quiz8 from './Quizes/Quiz8'
 import Quiz9 from './Quizes/Quiz9'
+import Quiz10 from './Quizes/Quiz10'
+import Quiz11 from './Quizes/Quiz11'
+import Quiz12 from './Quizes/Quiz12'
+import Quiz13 from './Quizes/Quiz13'
+import Quiz14 from './Quizes/Quiz14'
+import Quiz15 from './Quizes/Quiz15'
+
 
 class Track2 extends React.Component {
     render() {
@@ -51,15 +58,15 @@ class Track2 extends React.Component {
                 <Quiz9 />
                 <Backbone11 />
                 <Backbone12 />
-                {/*<Quiz10/>*/}
+                <Quiz10/>
                 <Backbone13_1 />
                 <Backbone13_2 />
-                {/*<Quiz11/>*/}
-                {/*<Quiz12/>*/}
+                <Quiz11/>
+                <Quiz12/>
                 <Backbone14 />
-                {/*<Quiz13/>*/}
-                {/*<Quiz14/>*/}
-                {/*<Quiz15/>*/}
+                <Quiz13/>
+                <Quiz14/>
+                <Quiz15/>
                 <Backbone15 />
                 <Backbone16 />
                 <Backbone17 />
