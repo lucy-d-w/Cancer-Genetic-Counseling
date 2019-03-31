@@ -1,25 +1,26 @@
 import React from 'react';
 import Backbone from './Backbone';
-import { Checkbox } from "@blueprintjs/core";
+import { Checkbox, ProgressBar, Intent } from "@blueprintjs/core";
 
 
 class Quiz extends Backbone {
     render() {
+        const TOTAL = 16;
         return (
-            <Backbone title="Knowledge Check" first={this.props.first} last={this.props.last}>
+            <Backbone title={"Learning Checkpoint #" + this.props.num} first={this.props.first} last={this.props.last}>
                 <div className="BB-content">
                     <div className='Main-content'>
                         <div className="Form Content-list">
-                            <label>{this.props.question}</label>
-                            <div style={{ margin: '5vh' }}>
+                            <label className="Question">{this.props.question}</label>
+                            <div style={{ margin: '3vh' }}>
                                 <div style={{ textAlign: 'left' }}>
                                     <Checkbox label="I agree" />
                                     <Checkbox label="I disagree" />
                                     <Checkbox label="I don't know" />
                                 </div>
                             </div>
-
                         </div>
+                        <ProgressBar className="Progress" value={this.props.num / TOTAL} animate={false} stripes={false} intent={Intent.PRIMARY}/>
                     </div>
                 </div>
             </Backbone>

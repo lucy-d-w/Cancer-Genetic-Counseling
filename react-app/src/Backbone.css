@@ -42,10 +42,13 @@
     align-items: center;
     height: 55vh;
     margin: 4vh 2vw;
+
+    flex-direction: row;
 }
 
 .Form {
     align-items: center;
+    height: 30vh;
 }
 
 .Arrow {
@@ -219,4 +222,8 @@ li {
 
 .Row {
     display: block;
+}
+
+.Progress {
+    margin-top: 30vh;
 }

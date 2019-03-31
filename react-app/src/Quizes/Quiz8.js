@@ -5,7 +5,7 @@ import Quiz from '../Quiz';
 class Quiz8 extends Quiz {
     render() {
         return (
-            <Quiz question="If a person has a mutation that causes high risks for breast or colon cancer, there is usually nothing they can do about it." />
+            <Quiz num="8" question="If a person has a mutation that causes high risks for breast or colon cancer, there is usually nothing they can do about it." />
         );
     }
 }

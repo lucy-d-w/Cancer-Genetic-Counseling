@@ -54,7 +54,7 @@ class App extends Component {
         const scrollBarWidth = windowWidth - documentWidth;
 
        
-        const trackID = 3;
+        const trackID = 1;
         var track;
         if (trackID == 1) {
             track = <Track1 />;
