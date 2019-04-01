@@ -46,26 +46,30 @@ import TrackQuiz from './TrackQuiz'
 
 class App extends Component {
     
+    
+
+
     render() {
         const documentWidth = document.body.clientWidth;
         const windowWidth = window.innerWidth;
         const scrollBarWidth = windowWidth - documentWidth;
 
-        const { params } = this.props.match
-        const trackID = params.trackid;
+       
+        const trackID = 3;
         var track;
         if (trackID == 1) {
             track = <Track1 />;
         } else if (trackID == 2) {
             track = <Track2 />;
         } else {
-            track = <Track3 />; {/*need to add general track 4*/}
+            track = <Track3 />;
         }
         
         return (
             <body id="body" style={{ paddingRight: { scrollBarWidth } }}>
                 <div className="App">
                     <header className="App-header">
+                        <TrackQuiz />
                         <div>{track}</div>
                     </header>
                 </div>
