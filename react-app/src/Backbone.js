@@ -1,7 +1,6 @@
 import React from "react";
 import './Backbone.css';
-import { Card, H1, Icon } from "@blueprintjs/core";
-import { IconNames } from "@blueprintjs/icons";
+import { Card, H1 } from "@blueprintjs/core";
 import down_arrow from './Graphics/down-arrow.png'
 import up_arrow from './Graphics/up-arrow.png'
 

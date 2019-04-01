@@ -1,7 +1,6 @@
 import React from "react";
 import Backbone from '../Backbone';
 import { Collapse, Icon } from "@blueprintjs/core";
-import { IconNames } from "@blueprintjs/icons";
 import familytree from '../Graphics/family-tree.png'
 import world from '../Graphics/world.png'
 import group from '../Graphics/group.png'
