@@ -17,7 +17,7 @@ class Backbone2 extends Backbone {
                 <img src={chart} className='Main-graphic' onClick={this.showOverlay}></img>
                 <p>Click the chart to learn more</p>
                 <Dialog className="Cover" onClose={this.closeOverlay} {...this.state}>
-                    <div className={Classes.DIALOG_BODY}>
+                    <div className={Classes.DIALOG_BODY} style={{ margin: '0' }}>
                         <img src={x} className="Close" onClick={this.closeOverlay} />
                         {this.getOverlay(LM_2_1)}
                     </div>

@@ -11,7 +11,7 @@ class Overlay extends Backbone {
             <div>
                 <Button className="LM-button" onClick={() => this.showOverlay(this.props.over)}>{this.props.text}</Button>
                 <Dialog className="Cover" onClose={this.closeOverlay} {...this.state}>
-                    <div className={Classes.DIALOG_BODY}>
+                    <div className={Classes.DIALOG_BODY} style={{ margin: '0' }}>
                         <img src={x} className="Close" onClick={this.closeOverlay} />
                         {this.getOverlay(this.props.over)}
                     </div>

@@ -41,6 +41,7 @@ import Quiz15 from './Quizes/Quiz15'
 import Track1 from './Track1'
 import Track2 from './Track2'
 import Track3 from './Track3'
+import TrackQuiz from './TrackQuiz'
 
 
 class App extends Component {
@@ -54,7 +55,7 @@ class App extends Component {
         const scrollBarWidth = windowWidth - documentWidth;
 
        
-        const trackID = 1;
+        const trackID = 3;
         var track;
         if (trackID == 1) {
             track = <Track1 />;
@@ -68,6 +69,7 @@ class App extends Component {
             <body id="body" style={{ paddingRight: { scrollBarWidth } }}>
                 <div className="App">
                     <header className="App-header">
+                        <TrackQuiz />
                         <div>{track}</div>
                     </header>
                 </div>

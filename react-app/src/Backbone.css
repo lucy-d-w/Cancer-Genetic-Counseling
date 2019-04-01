@@ -203,8 +203,8 @@ li {
 .Cover {
     overflow: hidden;
     background-color: white;
-    height: 100vh;
-    width: 100vw;
+    height: 98vh;
+    width: 99vw;
     margin: 0;
     padding: 0;
     /*temp fix, idk what is wrong with this*/
