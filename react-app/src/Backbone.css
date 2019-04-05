@@ -167,7 +167,7 @@ li {
 
 .Column {
     height: 100%;
-    width: 20vw;
+    width: 25vw;
     margin: 5vh 2.5vw;
     box-sizing: border-box;
     padding: 1% 2%;
@@ -208,8 +208,12 @@ li {
     margin: 0;
     padding: 0;
     /*temp fix, idk what is wrong with this*/
-    font-size: 175%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
 }
 
 .Close {

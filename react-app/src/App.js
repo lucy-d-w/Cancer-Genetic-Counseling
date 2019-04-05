@@ -43,33 +43,35 @@ import Track2 from './Track2'
 import Track3 from './Track3'
 import TrackQuiz from './TrackQuiz'
 
+/* DATABASE */
+var firebase = require("firebase");
+
+
 
 class App extends Component {
     
-    
-
-
     render() {
         const documentWidth = document.body.clientWidth;
         const windowWidth = window.innerWidth;
         const scrollBarWidth = windowWidth - documentWidth;
 
        
-        const trackID = 3;
+        const { params } = this.props.match
+        const trackID = params.trackid;
+
         var track;
         if (trackID == 1) {
             track = <Track1 />;
         } else if (trackID == 2) {
             track = <Track2 />;
         } else {
-            track = <Track3 />;
+            track = <Track3 />; {/*need to add general track 4*/ }
         }
         
         return (
             <body id="body" style={{ paddingRight: { scrollBarWidth } }}>
                 <div className="App">
                     <header className="App-header">
-                        <TrackQuiz />
                         <div>{track}</div>
                     </header>
                 </div>
