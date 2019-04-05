@@ -5,8 +5,9 @@
     "create-react-context": "^0.2.3",
     "firebase": "^5.9.3",
     "html-react-parser": "^0.6.3",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
+    "node-gyp": "^3.8.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0"
   }
 }
