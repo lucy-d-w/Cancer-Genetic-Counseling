@@ -4,6 +4,12 @@ import { Checkbox, ProgressBar, Intent } from "@blueprintjs/core";
 
 
 class Quiz extends Backbone {
+    state = {
+        '1': false,
+        '2': false,
+        '3': false,
+    }
+
     render() {
         const TOTAL = 16;
         return (
@@ -14,9 +20,9 @@ class Quiz extends Backbone {
                             <label className="Question">{this.props.question}</label>
                             <div style={{ margin: '3vh' }}>
                                 <div style={{ textAlign: 'left' }}>
-                                    <Checkbox label="I agree" />
-                                    <Checkbox label="I disagree" />
-                                    <Checkbox label="I don't know" />
+                                    <Checkbox id="1" label="I agree" onChange={this.selection}/>
+                                    <Checkbox id="2" label="I disagree" onChange={this.selection}/>
+                                    <Checkbox id="3" label="I don't know" onChange={this.selection}/>
                                 </div>
                             </div>
                         </div>
@@ -25,6 +31,18 @@ class Quiz extends Backbone {
                 </div>
             </Backbone>
         );
+    }
+
+    selection = (e) => {
+        const check = e.target.id;
+        for (var i = 1; i <= 3; ++i) {
+            document.getElementById(i.toString()).checked = false;
+        }
+        e.target.checked = true;
+        /*var userRef = db.collection('cities').doc('BJ');*/
+        var data = ('{ lc' + this.props.num + ': ' + check +'}');
+        console.log(data);
+        /*var setWithMerge = userRef.set(data, { merge: true });*/
     }
 }
 
