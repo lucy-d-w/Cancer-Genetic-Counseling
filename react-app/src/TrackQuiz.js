@@ -6,16 +6,23 @@ import { Classes, Checkbox, Button, Intent } from "@blueprintjs/core";
 class TrackQuiz extends Backbone {
     state = {
         selection: '4',
+        userID: '0',
     }
 
-    onSubmit = () => {
-        this.props.history.push('/track/' + this.state.selection)
+    onSubmit = (event) => {
+        this.props.history.push('/track/' + this.state.selection + '/id/' + this.state.userID)
     }
 
     onSelect = (event) => {
         const check = event.target.checked;
         const value = event.target.id;
         this.setState({ selection: value });
+    }
+
+    onIDInput = (event) => {
+        this.setState({
+            userID: event.target.value
+        });
     }
 
     render() {
@@ -36,11 +43,10 @@ class TrackQuiz extends Backbone {
                                                 <Checkbox id="4" onChange={this.onSelect} label="Other" />{/*General????*/}
                                             </div>
                                         </div>
-                                        {/*<div>
-                            {/*<div>
-                                <label style={{marginRight: '2vw'}}>ID:</label>
-                                <textarea className={Classes.INPUT} />
-                            </div>*/}
+                                        <div>
+                                            <label style={{ marginRight: '2vw' }}>ID:</label>
+                                            <textarea id="user" onChange={this.onIDInput} className = { Classes.INPUT } />
+                                        </div>
                                         <Button intent={Intent.PRIMARY} large={true} onClick={this.onSubmit}>Submit</Button>
                                     </div>
                                 </div>

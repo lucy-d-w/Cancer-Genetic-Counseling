@@ -11,7 +11,7 @@ const routing = (
     <Router>
         <div>
             <Route exact path="/" component={TrackQuiz} />
-            <Route path="/track/:trackid" component={App} />
+            <Route path="/track/:trackid/id/:userid" component={App} />
         </div>
     </Router>
 )
