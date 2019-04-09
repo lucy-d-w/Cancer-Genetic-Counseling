@@ -35,17 +35,23 @@ import Quiz13 from './Quizes/Quiz13'
 import Quiz14 from './Quizes/Quiz14'
 import Quiz15 from './Quizes/Quiz15'
 
+import LM_5_2 from './LearnMores/LM5-2'
+import LM_5_3 from './LearnMores/LM5-3'
 
-class Track2 extends React.Component {
+
+class Track4 extends React.Component {
     render() {
         return (
             <div>
                 <Backbone1 />
                 <Backbone2 />
                 <Quiz1 />
+                <Backbone3 />
                 <Backbone4 />
                 <Quiz2 />
                 <Backbone5 />
+                <LM_5_2 />
+                <LM_5_3 />
                 <Quiz3 />
                 <Backbone6 />
                 <Backbone7 />
@@ -79,4 +85,4 @@ class Track2 extends React.Component {
     }
 }
 
-export default Track2;
+export default Track4;
