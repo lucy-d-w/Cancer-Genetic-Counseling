@@ -12,8 +12,8 @@ class Backbone12_3 extends React.Component {
 
           
                     <div className="Column Content-box" style={{width: 450, marginLeft: -200}}>
-                       <li>Family members may consider genetic testing</li>
-                       <li>A positive test result may change their medical care</li>
+                       <li>In many cases, testing of other family members will not be useful</li>
+                       <li>Medical care for family members is guided by personal and family history</li>
                     </div>
 
                     <img src={fam} className='Main-graphic' style={{width: '55vh', marginTop: '5vh', marginRight: -200}}></img>

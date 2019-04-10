@@ -14,8 +14,8 @@ class Backbone12_2 extends React.Component {
                    
           
                     <div className="Column Content-box" style={{width: 450, marginRight: -200}}>
-                       <li>May change cancer screening and risk reduction options</li>
-                       <li>If you have cancer, it may change your treatment options</li>
+                       <li>Genetic test result does not usually change medical care</li>
+                       <li>Medical care is guided by personal and family history</li>
                     </div>
 
                 </div>
