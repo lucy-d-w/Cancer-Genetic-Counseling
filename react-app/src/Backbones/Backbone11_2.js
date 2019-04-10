@@ -1,16 +1,23 @@
 import React from "react";
 import Backbone from '../Backbone';
-import implications2 from '../Graphics/implications2.png'
+import you from '../Graphics/you.png'
 
 class Backbone11_2 extends React.Component {
     render() {
         return (
 
             <Backbone title="What does a positive genetic test result mean?" first={this.props.first} last={this.props.last}>
-                <div className="Content">
-                    <div className="Main-content" style={{textalign: 'center'}}>
-                        <img src={implications2} className='Main-graphic'></img>
+
+                    <div className="BB-content">
+                    
+                    <img src={you} className='Main-graphic' style={{width: '55vh', marginTop: '5vh', marginLeft: -200}}></img>
+                   
+          
+                    <div className="Column Content-box" style={{width: 450, marginRight: -200}}>
+                       <li>May change cancer screening and risk reduction options</li>
+                       <li>If you have cancer, it may change your treatment options</li>
                     </div>
+
                 </div>
             </Backbone>
         );
