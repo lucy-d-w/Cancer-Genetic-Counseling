@@ -5,7 +5,7 @@ import LM_12_1 from '../LearnMores/LM12_1'
 import LM_12_2 from '../LearnMores/LM12_2'
 import Overlay from '../LearnMores/Overlay'
 
-class Backbone12 extends React.Component {
+class Backbone12_4 extends React.Component {
     render() {
         return (
             <Backbone title="What about a variant of uncertain significance (VUS) or negative result?" first={this.props.first} last={this.props.last}>
@@ -28,6 +28,4 @@ class Backbone12 extends React.Component {
     }
 }
 
-export default Backbone12;
-
-
+export default Backbone12_4;
