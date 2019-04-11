@@ -1,6 +1,6 @@
 import React from 'react';
 import Backbone from './Backbone';
-import { Checkbox, ProgressBar, Intent } from "@blueprintjs/core";
+import { Radio, RadioGroup, ProgressBar, Intent } from "@blueprintjs/core";
 import firebase from "./Firebase/Firebase";
 
 
@@ -10,9 +10,7 @@ class Quiz extends Backbone {
     }
 
     state = {
-        '1': false,
-        '2': false,
-        '3': false,
+        'selection': '',
     }
 
     render() {
@@ -22,16 +20,17 @@ class Quiz extends Backbone {
                 <div className="BB-content">
                     <div className='Main-content'>
                         <div className="Form Content-list">
-                            <form>
-                                <label className="Question">{this.props.question}</label>
-                                <div style={{ margin: '3vh' }}>
-                                    <div style={{ textAlign: 'left' }}>
-                                        <Checkbox id="1" label="I agree" onChange={this.selection}/>
-                                        <Checkbox id="2" label="I disagree" onChange={ this.selection}/>
-                                        <Checkbox id="3" label="I don't know" onChange={this.selection}/>
-                                    </div>
-                                    </div>
-                            </form>
+                        <label className="Question">{this.props.question}</label>
+                            <div style={{ margin: '3vh' }}>
+                                <div style={{ textAlign: 'left' }}>
+                                    <RadioGroup onChange={this.selection} selectedValue={this.state.selection}>
+                                        <Radio value="agree" label="I agree"/>
+                                        <Radio value="disagree" label="I disagree"/>
+                                        <Radio value="unsure" label="I don't know" />
+                                    </RadioGroup>
+                            </div>
+                         </div>
+                            
                         </div>
                         <ProgressBar className="Progress" value={this.props.num / TOTAL} animate={false} stripes={false} intent={Intent.PRIMARY}/>
                     </div>
@@ -42,25 +41,31 @@ class Quiz extends Backbone {
     
     selection = (e) => {
         const userID = this.props.user;
-        console.log(userID);
 
-        const check = e.target.id;
-        for (var i = 1; i <= 3; ++i) {
-            document.getElementById(i.toString()).checked = false;
+        /*const check = e.target.id;
+        var newState = {
+            'agree': false,
+            'disgree': false,
+            'unsure': false,
         }
-        e.target.checked = true;
-
-        e.preventDefault();
+        newState[check] = true;
+        console.log(newState)
+        this.setState(newState);
+        console.log(this.state);
+        for (var i = 1; i <= 3; ++i) {
+            document.getElementById(check).checked = false;
+        }*/
+        const answer = e.target.value;
+        console.log(answer);
+        this.setState({ selection: answer });
+        
         const db = firebase.firestore();
-        db.settings({
-            timestampsInSnapshots: true
-        });
         
         var userRef = db.collection('testusers').doc(userID);
-        var key = '{ lc' + this.props.num
+        var key = 'lc' + this.props.num
 
         
-        var setWithMerge = userRef.set({ [key]: check }, { merge: true });
+        var setWithMerge = userRef.set({ [key]: answer }, { merge: true });
     }
 }
 

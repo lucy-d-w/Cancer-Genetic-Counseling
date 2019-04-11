@@ -5,7 +5,7 @@ import Quiz from '../Quiz';
 class Quiz11 extends Quiz {
     render() {
         return (
-            <Quiz num="11" question="Testing can find a gene mutation that is unexpected or does not fit
+            <Quiz user={this.props.user} num="11" question="Testing can find a gene mutation that is unexpected or does not fit
             with the pattern of cancers in a person's family.">
             </Quiz>
         );

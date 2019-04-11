@@ -44,33 +44,33 @@ class Track1 extends React.Component {
                 <Backbone2/>
                 <Quiz1 user={this.props.user}/>
                 <Backbone4/>
-                <Quiz2/>
+                <Quiz2 user={this.props.user}/>
                 <Backbone5/>
-                <Quiz3/>
-                <Backbone6/>
+                <Quiz3 user={this.props.user}/>
+                <Backbone6 />
                 <Backbone7/>
-                <Quiz4/>
-                <Quiz5/>
+                <Quiz4 user={this.props.user}/>
+                <Quiz5 user={this.props.user}/>
                 <Backbone8/>
-                <Quiz6/>
-                <Quiz7/>
-                <Quiz8/>
+                <Quiz6 user={this.props.user}/>
+                <Quiz7 user={this.props.user}/>
+                <Quiz8 user={this.props.user}/>
                 <Backbone9/>
                 <Backbone10/>
-                <Quiz9/>
+                <Quiz9 user={this.props.user}/>
                 <Backbone11_1></Backbone11_1>
                 <Backbone11_2></Backbone11_2>
                 <Backbone11_3></Backbone11_3>
                 <Backbone12/>
-                <Quiz10/>
+                <Quiz10 user={this.props.user}/>
                 <Backbone13_1/>
                 <Backbone13_2/>
-                <Quiz11/>
-                <Quiz12/>
+                <Quiz11 user={this.props.user}/>
+                <Quiz12 user={this.props.user}/>
                 <Backbone14/>
-                <Quiz13/>
-                <Quiz14/>
-                <Quiz15/>
+                <Quiz13 user={this.props.user}/>
+                <Quiz14 user={this.props.user}/>
+                <Quiz15 user={this.props.user}/>
                 <Backbone15/>
                 <Backbone16/>
                 <Backbone17/>

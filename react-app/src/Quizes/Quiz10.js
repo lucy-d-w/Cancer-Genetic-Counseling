@@ -5,7 +5,7 @@ import Quiz from '../Quiz';
 class Quiz10 extends Quiz {
     render() {
         return (
-            <Quiz num="10" question="Finding a variant of uncertain significance (VUS) in a cancer gene will
+            <Quiz user={this.props.user} num="10" question="Finding a variant of uncertain significance (VUS) in a cancer gene will
             usually explain why someone got cancer.">
             </Quiz>
         );
