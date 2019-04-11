@@ -1,9 +1,14 @@
 import React from 'react';
 import Backbone from './Backbone';
 import { Checkbox, ProgressBar, Intent } from "@blueprintjs/core";
+import firebase from "./Firebase/Firebase";
 
 
 class Quiz extends Backbone {
+    constructor(props) {
+        super(props);
+    }
+
     state = {
         '1': false,
         '2': false,
@@ -17,14 +22,16 @@ class Quiz extends Backbone {
                 <div className="BB-content">
                     <div className='Main-content'>
                         <div className="Form Content-list">
-                            <label className="Question">{this.props.question}</label>
-                            <div style={{ margin: '3vh' }}>
-                                <div style={{ textAlign: 'left' }}>
-                                    <Checkbox id="1" label="I agree" onChange={this.selection}/>
-                                    <Checkbox id="2" label="I disagree" onChange={this.selection}/>
-                                    <Checkbox id="3" label="I don't know" onChange={this.selection}/>
-                                </div>
-                            </div>
+                            <form>
+                                <label className="Question">{this.props.question}</label>
+                                <div style={{ margin: '3vh' }}>
+                                    <div style={{ textAlign: 'left' }}>
+                                        <Checkbox id="1" label="I agree" onChange={this.selection}/>
+                                        <Checkbox id="2" label="I disagree" onChange={ this.selection}/>
+                                        <Checkbox id="3" label="I don't know" onChange={this.selection}/>
+                                    </div>
+                                    </div>
+                            </form>
                         </div>
                         <ProgressBar className="Progress" value={this.props.num / TOTAL} animate={false} stripes={false} intent={Intent.PRIMARY}/>
                     </div>
@@ -32,17 +39,28 @@ class Quiz extends Backbone {
             </Backbone>
         );
     }
-
+    
     selection = (e) => {
+        const userID = this.props.user;
+        console.log(userID);
+
         const check = e.target.id;
         for (var i = 1; i <= 3; ++i) {
             document.getElementById(i.toString()).checked = false;
         }
         e.target.checked = true;
-        /*var userRef = db.collection('cities').doc('BJ');*/
-        var data = ('{ lc' + this.props.num + ': ' + check +'}');
-        console.log(data);
-        /*var setWithMerge = userRef.set(data, { merge: true });*/
+
+        e.preventDefault();
+        const db = firebase.firestore();
+        db.settings({
+            timestampsInSnapshots: true
+        });
+        
+        var userRef = db.collection('testusers').doc(userID);
+        var key = '{ lc' + this.props.num
+
+        
+        var setWithMerge = userRef.set({ [key]: check }, { merge: true });
     }
 }
 

@@ -1,3 +1,4 @@
+
 import '@blueprintjs/core/lib/css/blueprint.css';
 import '@blueprintjs/icons/lib/css/blueprint-icons.css';
 
@@ -65,13 +66,13 @@ class App extends Component {
 
         var track;
         if (trackID == 1) {
-            track = <Track1 />;
+            track = <Track1 user={userID} />;
         } else if (trackID == 2) {
-            track = <Track2 />;
+            track = <Track2 user={userID}/>;
         } else if (trackID == 3) {
-            track = <Track3 />; {/*need to add general track 4*/ }
+            track = <Track3 user={userID}/>; {/*need to add general track 4*/ }
         } else if (trackID == 4) {
-            track = <Track4 />;
+            track = <Track4 user={userID}/>;
         } else {
             track = <h3 style={{width:'100vw'}}>The page you are looking for does not exist. Please go back and try again.</h3>
         }

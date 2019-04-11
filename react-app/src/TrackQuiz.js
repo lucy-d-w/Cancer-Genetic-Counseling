@@ -10,7 +10,7 @@ class TrackQuiz extends Backbone {
     }
 
     onSubmit = (event) => {
-        this.props.history.push('/track/' + this.state.selection + '/id/' + this.state.userID)
+        this.props.history.push('/id/' + this.state.userID + '/track/' + this.state.selection)
     }
 
     onSelect = (event) => {

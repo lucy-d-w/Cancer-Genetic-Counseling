@@ -42,7 +42,7 @@ class Track1 extends React.Component {
             <div>
                 <Backbone1/>
                 <Backbone2/>
-                <Quiz1/>
+                <Quiz1 user={this.props.user}/>
                 <Backbone4/>
                 <Quiz2/>
                 <Backbone5/>
