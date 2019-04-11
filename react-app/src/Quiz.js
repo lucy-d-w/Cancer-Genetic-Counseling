@@ -13,6 +13,26 @@ class Quiz extends Backbone {
         'selection': '',
     }
 
+    componentDidMount() {
+        const db = firebase.firestore();
+        var docRef = db.collection("testusers").doc(this.props.user);
+
+        var key = 'lc' + this.props.num;
+        docRef.get().then(function (doc) {
+            if (doc.exists) {
+                const data = doc.data()[key];
+                if (data == 'agree' || data =='disagree') {
+                    this.setState({ selection: data });
+                }
+            } else {
+                // doc.data() will be undefined in this case
+                console.log("No such document!");
+            }
+        }).catch(function (error) {
+            console.log("Error getting document:", error);
+        });
+    }
+
     render() {
         const TOTAL = 16;
         return (
@@ -41,30 +61,13 @@ class Quiz extends Backbone {
     
     selection = (e) => {
         const userID = this.props.user;
-
-        /*const check = e.target.id;
-        var newState = {
-            'agree': false,
-            'disgree': false,
-            'unsure': false,
-        }
-        newState[check] = true;
-        console.log(newState)
-        this.setState(newState);
-        console.log(this.state);
-        for (var i = 1; i <= 3; ++i) {
-            document.getElementById(check).checked = false;
-        }*/
         const answer = e.target.value;
         console.log(answer);
         this.setState({ selection: answer });
         
         const db = firebase.firestore();
-        
         var userRef = db.collection('testusers').doc(userID);
-        var key = 'lc' + this.props.num
-
-        
+        var key = 'lc' + this.props.num;
         var setWithMerge = userRef.set({ [key]: answer }, { merge: true });
     }
 }

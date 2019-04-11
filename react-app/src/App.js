@@ -66,14 +66,14 @@ class App extends Component {
         const { params } = this.props.match
         const trackID = params.trackid;
         const userID = params.userid;
-
+        
         var track;
         if (trackID == 1) {
             track = <Track1 user={userID} />;
         } else if (trackID == 2) {
             track = <Track2 user={userID}/>;
         } else if (trackID == 3) {
-            track = <Track3 user={userID}/>; {/*need to add general track 4*/ }
+            track = <Track3 user={userID}/>; 
         } else if (trackID == 4) {
             track = <Track4 user={userID}/>;
         } else {
