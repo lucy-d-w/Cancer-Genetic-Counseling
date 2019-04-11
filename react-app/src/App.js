@@ -44,10 +44,7 @@ import Quiz13 from './Quizes/Quiz13'
 import Quiz14 from './Quizes/Quiz14'
 import Quiz15 from './Quizes/Quiz15'
 
-import Track1 from './Track1'
-import Track2 from './Track2'
-import Track3 from './Track3'
-import Track4 from './Track4'
+import Track from './Track'
 import TrackQuiz from './TrackQuiz'
 
 /* DATABASE */
@@ -62,29 +59,15 @@ class App extends Component {
         const windowWidth = window.innerWidth;
         const scrollBarWidth = windowWidth - documentWidth;
 
-       
         const { params } = this.props.match
         const trackID = params.trackid;
         const userID = params.userid;
-        
-        var track;
-        if (trackID == 1) {
-            track = <Track1 user={userID} />;
-        } else if (trackID == 2) {
-            track = <Track2 user={userID}/>;
-        } else if (trackID == 3) {
-            track = <Track3 user={userID}/>; 
-        } else if (trackID == 4) {
-            track = <Track4 user={userID}/>;
-        } else {
-            track = <h3 style={{width:'100vw'}}>The page you are looking for does not exist. Please go back and try again.</h3>
-        }
         
         return (
             <body id="body" style={{ paddingRight: { scrollBarWidth } }}>
                 <div className="App">
                     <header className="App-header">
-                        <div>{track}</div>
+                        <Track track={trackID} user={userID}/>
                     </header>
                 </div>
             </body>

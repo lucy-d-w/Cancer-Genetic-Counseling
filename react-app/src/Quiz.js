@@ -21,7 +21,8 @@ class Quiz extends Backbone {
         docRef.get().then(function (doc) {
             if (doc.exists) {
                 const data = doc.data()[key];
-                if (data == 'agree' || data =='disagree') {
+                console.log("data of "+ key + " : " +data)
+                if (data == 'agree' || data == 'disagree') {
                     this.setState({ selection: data });
                 }
             } else {
@@ -62,7 +63,6 @@ class Quiz extends Backbone {
     selection = (e) => {
         const userID = this.props.user;
         const answer = e.target.value;
-        console.log(answer);
         this.setState({ selection: answer });
         
         const db = firebase.firestore();

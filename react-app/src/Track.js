@@ -38,18 +38,31 @@ import Quiz13 from './Quizes/Quiz13'
 import Quiz14 from './Quizes/Quiz14'
 import Quiz15 from './Quizes/Quiz15'
 
+import LM_5_2 from './LearnMores/LM5-2'
+import LM_5_3 from './LearnMores/LM5-3'
 
-class Track1 extends React.Component {
+
+class Track extends React.Component {
     render() {
+        const track = this.props.track;
         return (
             <div>
                 <Backbone1/>
                 <Backbone2/>
-                <Quiz1 user={this.props.user}/>
+                <Quiz1 user={this.props.user} />
+
+                {(track == 4) && <Backbone3 />}
+
                 <Backbone4/>
                 <Quiz2 user={this.props.user}/>
                 <Backbone5/>
-                <Quiz3 user={this.props.user}/>
+                <Quiz3 user={this.props.user} />
+
+                {/*(track == 1) && <LM10_2/>*/}
+
+                {(track == 3) && <LM_5_2 />}
+                {(track == 3) && <LM_5_3 />}
+
                 <Backbone6 />
                 <Backbone7/>
                 <Quiz4 user={this.props.user}/>
@@ -85,4 +98,4 @@ class Track1 extends React.Component {
     }
 }
 
-export default Track1;
+export default Track;
