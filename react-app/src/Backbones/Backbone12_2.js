@@ -2,11 +2,11 @@ import React from "react";
 import Backbone from '../Backbone';
 import you from '../Graphics/you.png'
 
-class Backbone11_2 extends React.Component {
+class Backbone12_2 extends React.Component {
     render() {
         return (
 
-            <Backbone title="What does a positive genetic test result mean?" first={this.props.first} last={this.props.last}>
+        <Backbone title="What about a variant of uncertain significance (VUS) or negative result?" first={this.props.first} last={this.props.last}>
 
                     <div className="BB-content">
                     
@@ -14,14 +14,14 @@ class Backbone11_2 extends React.Component {
                    
           
                     <div className="Column Content-box" style={{width: 450, marginRight: -200}}>
-                       <li>May change cancer screening and risk reduction options</li>
-                       <li>If you have cancer, it may change your treatment options</li>
+                       <li>Genetic test result does not usually change medical care</li>
+                       <li>Medical care is guided by personal and family history</li>
                     </div>
 
                 </div>
-            </Backbone>
+</Backbone>
         );
     }
 }
 
-export default Backbone11_2;
+export default Backbone12_2;
