@@ -11,6 +11,9 @@ import LM_5_2 from './LearnMores/LM5-2'
 import LM_8_1 from './LearnMores/LM8-1'
 import LM_8_2 from './LearnMores/LM8-2'
 
+import VisibilitySensor from "react-visibility-sensor"
+import { isBoolean } from "util";
+
 
 class Backbone extends React.Component {
     state = {
@@ -23,6 +26,7 @@ class Backbone extends React.Component {
         scrollPosition: 0,
 
     };
+
 
     getOverlay = id => {
         return React.createElement(id);
@@ -40,17 +44,27 @@ class Backbone extends React.Component {
     }
 
     scrollDown() {
-        /*window.scrollBy(0, 1.0115 * window.innerHeight);*/
         window.scrollBy(0, window.innerHeight);
     }
 
     scrollUp() {
-        /*window.scrollBy(0, -1.011 * window.innerHeight);*/
         window.scrollBy(0, -1 * window.innerHeight);
+    }
+
+    onVisible(isVisible) {
+        if (isVisible) {
+            const path = './Audio/test.mp3';
+            import(`${path}`)
+                .then(aud => {
+                    var audio = new Audio(aud.default);
+                    audio.play();
+                })
+        }
     }
 
     render() {
         return (
+            <VisibilitySensor onChange={this.onVisible}>
             <div className="Page-wrap">
                 <div >
                     {!this.props.first &&
@@ -79,6 +93,7 @@ class Backbone extends React.Component {
                         </button>}
                 </div>
             </div>
+            </VisibilitySensor>
         );
                     }
                                         

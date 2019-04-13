@@ -4,11 +4,8 @@ import { Radio, RadioGroup, ProgressBar, Intent } from "@blueprintjs/core";
 import firebase from "./Firebase/Firebase";
 
 
-class Quiz extends Backbone {
-    constructor(props) {
-        super(props);
-    }
 
+class Quiz extends Backbone {
     state = {
         'selection': '',
     }
@@ -21,8 +18,7 @@ class Quiz extends Backbone {
         docRef.get().then(function (doc) {
             if (doc.exists) {
                 const data = doc.data()[key];
-                console.log("data of "+ key + " : " +data)
-                if (data == 'agree' || data == 'disagree') {
+                if (data === 'agree' || data === 'disagree') {
                     this.setState({ selection: data });
                 }
             } else {
@@ -31,11 +27,13 @@ class Quiz extends Backbone {
             }
         }).catch(function (error) {
             console.log("Error getting document:", error);
-        });
+            });
+
     }
 
     render() {
         const TOTAL = 16;
+
         return (
             <Backbone title={"Learning Checkpoint #" + this.props.num} first={this.props.first} last={this.props.last}>
                 <div className="BB-content">
@@ -56,11 +54,21 @@ class Quiz extends Backbone {
                         <ProgressBar className="Progress" value={this.props.num / TOTAL} animate={false} stripes={false} intent={Intent.PRIMARY}/>
                     </div>
                 </div>
+
+               
             </Backbone>
         );
     }
     
     selection = (e) => {
+        const path = './Audio/test.mp3';
+        import(`${path}`)
+            .then(aud => {
+                var audio = new Audio(aud.default);
+                console.log(audio);
+                audio.play();
+            })
+       
         const userID = this.props.user;
         const answer = e.target.value;
         this.setState({ selection: answer });
