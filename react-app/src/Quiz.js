@@ -9,28 +9,7 @@ class Quiz extends Backbone {
     state = {
         'selection': '',
     }
-
-    componentDidMount() {
-        const db = firebase.firestore();
-        var docRef = db.collection("testusers").doc(this.props.user);
-
-        var key = 'lc' + this.props.num;
-        docRef.get().then(function (doc) {
-            if (doc.exists) {
-                const data = doc.data()[key];
-                if (data === 'agree' || data === 'disagree') {
-                    this.setState({ selection: data });
-                }
-            } else {
-                // doc.data() will be undefined in this case
-                console.log("No such document!");
-            }
-        }).catch(function (error) {
-            console.log("Error getting document:", error);
-            });
-
-    }
-
+    
     render() {
         const TOTAL = 16;
 
@@ -59,16 +38,30 @@ class Quiz extends Backbone {
             </Backbone>
         );
     }
+
+    componentDidMount = (e) => {
+        const db = firebase.firestore();
+        var docRef = db.collection("testusers").doc(this.props.user);
+
+        var key = 'lc' + this.props.num;
+        docRef.get().then((doc)  => {
+            if (doc.exists) {
+                const data = doc.data()[key];
+                if (data == "agree" || data == "disagree") {
+                    this.setState({ selection: data });
+                }
+            } else {
+                // doc.data() will be undefined in this case
+                console.log("No such document!");
+            }
+        }).catch(function (error) {
+            console.log("Error getting document:", error);
+            });
+        
+
+    }
     
     selection = (e) => {
-        const path = './Audio/test.mp3';
-        import(`${path}`)
-            .then(aud => {
-                var audio = new Audio(aud.default);
-                console.log(audio);
-                audio.play();
-            })
-       
         const userID = this.props.user;
         const answer = e.target.value;
         this.setState({ selection: answer });
