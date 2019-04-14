@@ -13,6 +13,7 @@ import LM_8_2 from './LearnMores/LM8-2'
 
 import VisibilitySensor from "react-visibility-sensor"
 import { isBoolean } from "util";
+import { setTimeout } from "timers";
 
 
 class Backbone extends React.Component {
@@ -24,6 +25,7 @@ class Backbone extends React.Component {
         isOpen: false,
         usePortal: true,
         scrollPosition: 0,
+        locked: true,
 
     };
 
@@ -51,14 +53,25 @@ class Backbone extends React.Component {
         window.scrollBy(0, -1 * window.innerHeight);
     }
 
-    onVisible(isVisible) {
+    unlock = () => {
+        this.setState({ locked: false });
+    }
+
+    onVisible = (isVisible) => {
         if (isVisible) {
             const path = './Audio/test.mp3';
+            var audio = new Audio();
+            audio.preload = "metadata";
+
             import(`${path}`)
                 .then(aud => {
-                    var audio = new Audio(aud.default);
+                    audio.src = aud.default;
                     audio.play();
                 })
+            audio.onloadedmetadata = () => {
+                var time = audio.duration * 1000;
+                setTimeout(this.unlock, time);
+            };
         }
     }
 
@@ -83,8 +96,8 @@ class Backbone extends React.Component {
                     </Card>
                 </div>
                 <div >
-                    {!this.props.last &&
-                        <button className="Arrow" onClick={this.scrollDown}>
+                        {!this.props.last &&
+                            <button className="Arrow" onClick={this.scrollDown} disabled={this.state.locked}>
                             <img src={down_arrow} />
                         </button>}
                     {this.props.last &&
