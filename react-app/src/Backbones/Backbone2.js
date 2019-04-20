@@ -11,7 +11,7 @@ class Backbone2 extends Backbone {
     
     render() {
         return (
-            <Backbone title="Causes of Cancer" first={this.props.first} last={this.props.last}>
+            <Backbone title="Causes of Cancer" first={this.props.first} last={this.props.last} audio='Backbone 2.mp3'>
             <div className="BB-content">
             <div className="Main-content">
                 <img src={chart} className='Main-graphic' onClick={this.showOverlay}></img>

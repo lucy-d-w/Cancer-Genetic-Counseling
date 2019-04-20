@@ -6,7 +6,7 @@ import { H3} from "@blueprintjs/core";
 class Backbone1 extends Backbone {
     render() {
         return (
-            <Backbone first={true} last={this.props.last}>
+            <Backbone first={true} last={this.props.last} audio='Backbone 1.mp3'>
                 <div className="BB-content">
                     <div>
                         <img src={title} className='Title'></img>

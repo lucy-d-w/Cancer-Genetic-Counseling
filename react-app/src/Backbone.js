@@ -29,6 +29,7 @@ class Backbone extends React.Component {
 
     };
 
+    audio_path = './Audio/Backbones/'
 
     getOverlay = id => {
         return React.createElement(id);
@@ -57,21 +58,43 @@ class Backbone extends React.Component {
         this.setState({ locked: false });
     }
 
-    onVisible = (isVisible) => {
-        if (isVisible) {
-            const path = './Audio/test.mp3';
-            var audio = new Audio();
+    componentDidMount = () => {
+        if (typeof this.props.audio !== 'undefined') {
+            /*const path = this.audio_path + this.props.audio;
+            var audio = new Audio;
             audio.preload = "metadata";
-
             import(`${path}`)
                 .then(aud => {
                     audio.src = aud.default;
-                    audio.play();
                 })
-            audio.onloadedmetadata = () => {
-                var time = audio.duration * 1000;
-                setTimeout(this.unlock, time);
-            };
+            this.setState({ audio: audio });
+            console.log("Mounted: ", this.state.audio);*/
+        } else {
+            this.setState({locked: false})
+        }
+    }
+
+    onVisible = (isVisible) => {
+        if (typeof this.props.audio !== 'undefined') {
+            
+            if (isVisible) {
+                const path = this.audio_path + this.props.audio;
+                var audio = new Audio();
+                audio.preload = "metadata";
+
+                import(`${path}`)
+                    .then(aud => {
+                        audio.src = aud.default;
+                    })
+                audio.load();
+                audio.play();
+                audio.onloadedmetadata = () => {
+                    var time = audio.duration * 1000;
+                    setTimeout(this.unlock, time);
+                };
+            } else {
+                /*audio.pause();*/
+            }
         }
     }
 
@@ -104,7 +127,7 @@ class Backbone extends React.Component {
                         <button className="Arrow" onClick={this.scrollDown} style={{ visibility: 'hidden' }}>
                             <img src={down_arrow}/>
                         </button>}
-                </div>
+                    </div>
             </div>
             </VisibilitySensor>
         );
