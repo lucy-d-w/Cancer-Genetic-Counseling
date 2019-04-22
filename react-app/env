@@ -1,0 +1,7 @@
+
+REACT_APP_API_KEY=AIzaSyAonsu_qNtpYkqlVpTrYwi43Ax_C0X68WA
+REACT_APP_AUTH_DOMAIN=genetic-counseling-tool.firebaseapp.com
+REACT_APP_DATABASE_URL=https://genetic-counseling-tool.firebaseio.com
+REACT_APP_PROJECT_ID=genetic-counseling-tool
+REACT_APP_STORAGE_BUCKET=genetic-counseling-tool.appspot.com
+REACT_APP_MESSAGING_SENDER_ID=293424007467

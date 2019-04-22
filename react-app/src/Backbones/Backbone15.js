@@ -5,7 +5,7 @@ import payment from '../Graphics/payment.png'
 class Backbone15 extends React.Component {
     render() {
         return (
-            <Backbone title="Covering the Costs" first={this.props.first} last={this.props.last} audio='Backbone 15.mp3'>
+            <Backbone title="Covering the Costs" first={this.props.first} last={this.props.last}>
                 <div className="BB-content">
                    
                     <div className={"Main-content Content-box"}>
