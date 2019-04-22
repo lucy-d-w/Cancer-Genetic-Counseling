@@ -13,7 +13,7 @@ class Backbone3 extends Backbone {
 
     render() {
         return (
-            <Backbone title="Signs of Hereditary Cancer" first={this.props.first} last={this.props.last}>
+            <Backbone title="Signs of Hereditary Cancer" first={this.props.first} last={this.props.last} audio='Backbone 3.mp3'>
                 <div className="BB-content">
                     <div className="Side-column">
                         <img src={familytree} className="Graphic"></img>

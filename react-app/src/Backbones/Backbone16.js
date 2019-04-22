@@ -8,7 +8,7 @@ import { ALIGN_CENTER } from "@blueprintjs/icons/lib/esm/generated/iconNames";
 class Backbone16 extends React.Component {
     render() {
         return (
-            <Backbone title="What to Expect" first={this.props.first} last={this.props.last}>
+            <Backbone title="What to Expect" first={this.props.first} last={this.props.last} audio='Backbone 16.mp3'>
                 <div className="BB-content">
                    
                     <div className={"Main-content Content-box"} style={{marginTop: '-3vh'}}>

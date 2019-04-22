@@ -10,7 +10,7 @@ import Overlay from '../LearnMores/Overlay'
 class Backbone5 extends Backbone {
     render() {
         return (
-            <Backbone title="Chance to Inherit a Cancer Risk Gene" first={this.props.first} last={this.props.last}>
+            <Backbone title="Chance to Inherit a Cancer Risk Gene" first={this.props.first} last={this.props.last} audio='Backbone 5.mp3'>
                 <div className="Row">
                     <div className="BB-content" style={{ height: '45vh' }}>
                         <div className="Main-content" style={{ textalign: 'center' }}>

@@ -9,7 +9,7 @@ class Backbone4 extends Backbone {
 
     render() {
         return (
-            <Backbone title="Cancer and Inherited Genes" first={this.props.first} last={this.props.last}>
+            <Backbone title="Cancer and Inherited Genes" first={this.props.first} last={this.props.last} audio='Backbone 4.mp3'>
                 <div className="BB-content">
                     <div className="Side-columns">
                         <img src={dna}  style={{height: "50vh"}}></img>

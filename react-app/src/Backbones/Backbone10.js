@@ -11,7 +11,7 @@ import Overlay from '../LearnMores/Overlay'
 class Backbone10 extends React.Component {
     render() {
         return (
-            <Backbone title="3 Types of Genetic Test Results" first={this.props.first} last={this.props.last}>
+            <Backbone title="3 Types of Genetic Test Results" first={this.props.first} last={this.props.last} audio='Backbone 10.mp3'>
                 <div className="BB-content" style={{marginTop: '-0.1vh'}}>
                     <div className="Column Content-box">
                         <H2>Positive</H2>

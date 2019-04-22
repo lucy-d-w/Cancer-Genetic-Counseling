@@ -10,7 +10,7 @@ import Overlay from '../LearnMores/Overlay'
 class Backbone8 extends Backbone {
     render() {
         return (
-            <Backbone title="Hereditary Cancers and Medical Care" first={this.props.first} last={this.props.last}>
+            <Backbone title="Hereditary Cancers and Medical Care" first={this.props.first} last={this.props.last} audio='Backbone 8.mp3'>
                 <div className="Row">
                     <div className="BB-content" style={{ height: '50vh' }}>
                         <div className="Column Content-box">
