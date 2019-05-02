@@ -26,6 +26,7 @@ class Backbone extends React.Component {
         usePortal: true,
         scrollPosition: 0,
         locked: true,
+        selection: '',
 
     };
 
@@ -59,6 +60,7 @@ class Backbone extends React.Component {
     }
 
     componentDidMount = () => {
+        console.log(this.props.id)
         if (typeof this.props.audio !== 'undefined') {
             /*const path = this.audio_path + this.props.audio;
             var audio = new Audio;
@@ -120,7 +122,7 @@ class Backbone extends React.Component {
                 </div>
                 <div >
                         {!this.props.last &&
-                            <button className="Arrow" onClick={this.scrollDown} disabled={this.state.locked}>
+                            <button className="Arrow" onClick={this.scrollDown} disabled={this.state.locked || (this.props.needAnswer== true)}>
                             <img src={down_arrow} />
                         </button>}
                     {this.props.last &&

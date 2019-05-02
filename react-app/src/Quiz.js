@@ -7,14 +7,15 @@ import firebase from "./Firebase/Firebase";
 
 class Quiz extends Backbone {
     state = {
-        'selection': '',
+        selection: '',
+        needAnswer:true,
     }
     
     render() {
         const TOTAL = 16;
 
         return (
-            <Backbone title={"Learning Checkpoint #" + this.props.num} first={this.props.first} last={this.props.last}>
+            <Backbone title={"Learning Checkpoint #" + this.props.num} first={this.props.first} last={this.props.last} needAnswer={this.state.needAnswer}>
                 <div className="BB-content">
                     <div className='Main-content'>
                         <div className="Form Content-list">
@@ -64,7 +65,7 @@ class Quiz extends Backbone {
     selection = (e) => {
         const userID = this.props.user;
         const answer = e.target.value;
-        this.setState({ selection: answer });
+        this.setState({ selection: answer, needAnswer: false });
         
         const db = firebase.firestore();
         var userRef = db.collection('testusers').doc(userID);

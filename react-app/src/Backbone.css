@@ -217,6 +217,10 @@ li {
     font-size: calc(10px + 2vmin);
 }
 
+.Cover li {
+    font-size: 80%;
+}
+
 .Close {
     position: absolute;
     z-index: 1;
