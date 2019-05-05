@@ -7,7 +7,7 @@ import chart from '../Graphics/lm4-2-chart.png'
 class LM_4_2 extends LearnMore {
     render() {
         return (
-            <LearnMore title="Genes:  Our Bodies' Instructions" first={true} last={true}>
+            <LearnMore title="Genes:  Our Bodies' Instructions" first={true} last={true} audio='LMs/LM4_2_S16.m4a'>
                 <div className="Row">
                     <div className="BB-content" style={{ height: '40vh' }}>
                         <div className="Main-content" style={{ textalign: 'center' }}>

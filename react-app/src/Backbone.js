@@ -4,12 +4,6 @@ import { Card, H1 } from "@blueprintjs/core";
 import down_arrow from './Graphics/down-arrow.png'
 import up_arrow from './Graphics/up-arrow.png'
 
-import LM_4_1 from './LearnMores/LM4-1'
-import LM_4_2 from './LearnMores/LM4-2'
-import LM_5_1 from './LearnMores/LM5-1'
-import LM_5_2 from './LearnMores/LM5-2'
-import LM_8_1 from './LearnMores/LM8-1'
-import LM_8_2 from './LearnMores/LM8-2'
 
 import VisibilitySensor from "react-visibility-sensor"
 import { isBoolean } from "util";
@@ -30,7 +24,8 @@ class Backbone extends React.Component {
 
     };
 
-    audio_path = './Audio/Backbones/'
+    audio_path = './Audio/'
+    
 
     getOverlay = id => {
         return React.createElement(id);
@@ -60,17 +55,7 @@ class Backbone extends React.Component {
     }
 
     componentDidMount = () => {
-        console.log(this.props.id)
         if (typeof this.props.audio !== 'undefined') {
-            /*const path = this.audio_path + this.props.audio;
-            var audio = new Audio;
-            audio.preload = "metadata";
-            import(`${path}`)
-                .then(aud => {
-                    audio.src = aud.default;
-                })
-            this.setState({ audio: audio });
-            console.log("Mounted: ", this.state.audio);*/
         } else {
             this.setState({locked: false})
         }
@@ -78,7 +63,6 @@ class Backbone extends React.Component {
 
     onVisible = (isVisible) => {
         if (typeof this.props.audio !== 'undefined') {
-            
             if (isVisible) {
                 const path = this.audio_path + this.props.audio;
                 var audio = new Audio();
@@ -95,7 +79,7 @@ class Backbone extends React.Component {
                     setTimeout(this.unlock, time);
                 };
             } else {
-                /*audio.pause();*/
+                /*this.audio.pause();*/
             }
         }
     }

@@ -2,6 +2,7 @@ import React from "react";
 import Backbone from '../Backbone';
 import LM_8_1 from '../LearnMores/LM8-1'
 import LM_8_2 from '../LearnMores/LM8-2'
+import LM_8_3 from '../LearnMores/LM8-3'
 import { H2 } from "@blueprintjs/core";
 import dna from '../Graphics/x-double-dna.png'
 import person from '../Graphics/person.png'
@@ -10,7 +11,7 @@ import Overlay from '../LearnMores/Overlay'
 class Backbone8 extends Backbone {
     render() {
         return (
-            <Backbone title="Hereditary Cancers and Medical Care" first={this.props.first} last={this.props.last} audio='Backbone 8.mp3'>
+            <Backbone title="Hereditary Cancers and Medical Care" first={this.props.first} last={this.props.last} audio='Backbones/Backbone 8.mp3'>
                 <div className="Row">
                     <div className="BB-content" style={{ height: '50vh' }}>
                         <div className="Column Content-box">
@@ -31,8 +32,9 @@ class Backbone8 extends Backbone {
                 </div>
                 <div className="Row">
                     <div className="BB-content" style={{ height: '5vh' }}>    
-                        <Overlay text="Learn More: Breast and Ovarian Cancer" over={LM_8_1} />
-                        <Overlay text="Learn More: Colorectal Cancer" over={LM_8_2} />
+                        <Overlay text="Learn More: Breast & Ovarian Cancer (Women)" over={LM_8_1} />
+                        <Overlay text="Learn More: Breast & Ovarian Cancer (Men)" over={LM_8_2} />
+                        <Overlay text="Learn More: Colorectal Cancer" over={LM_8_3} />
                     </div>
                 </div>
             </Backbone>

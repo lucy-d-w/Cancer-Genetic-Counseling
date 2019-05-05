@@ -5,7 +5,7 @@ import dna from '../Graphics/x-double-dna.png'
 class LM_4_1 extends LearnMore {
     render() {
         return (
-            <LearnMore title="Genes:  Our Bodies' Instructions" first={true} last={true}>
+            <LearnMore title="Genes:  Our Bodies' Instructions" first={true} last={true} audio='LMs/LM4_1_S15.m4a'>
                 <div className="BB-content">
                     <div className="Column" style={{ width: "25vw", marginTop:'0vh' }}>
                         <div className="LM-Content-box">

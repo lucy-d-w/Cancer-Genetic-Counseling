@@ -6,7 +6,7 @@ import map2 from '../Graphics/map2.png'
 class LM_16_1 extends LearnMore {
     render() {
         return (
-            <LearnMore title="The Cancer Genetic Counseling Process" first={true} last={true}>
+            <LearnMore title="The Cancer Genetic Counseling Process" first={true} last={true} audio='LMs/LM16_1_S54.m4a'>
                 <div className="Content">
                 <div className="Main-content" style={{textalign: 'center', marginTop: '-1vh', marginLeft: '10vh'}}>
                         <img src={map2} className='Main-graphic'></img>

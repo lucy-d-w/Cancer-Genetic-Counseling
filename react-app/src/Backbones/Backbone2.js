@@ -11,10 +11,10 @@ class Backbone2 extends Backbone {
     
     render() {
         return (
-            <Backbone title="Causes of Cancer" first={this.props.first} last={this.props.last} audio='Backbone 2.mp3'>
+            <Backbone title="Causes of Cancer" first={this.props.first} last={this.props.last} audio='Backbones/Backbone 2.mp3'>
             <div className="BB-content">
             <div className="Main-content">
-                <img src={chart} className='Main-graphic' onClick={this.showOverlay}></img>
+                        <img src={chart} className='Main-graphic' onClick={this.showOverlay} ></img>
                 <p>Click the chart to learn more</p>
                 <Dialog className="Cover" onClose={this.closeOverlay} {...this.state}>
                     <div className={Classes.DIALOG_BODY} style={{ margin: '0' }}>

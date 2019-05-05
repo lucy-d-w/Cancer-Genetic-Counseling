@@ -13,7 +13,7 @@ class Backbone3 extends Backbone {
 
     render() {
         return (
-            <Backbone title="Signs of Hereditary Cancer" first={this.props.first} last={this.props.last} audio='Backbone 3.mp3'>
+            <Backbone title="Signs of Hereditary Cancer" first={this.props.first} last={this.props.last} audio='Backbones/Backbone 3.mp3'>
                 <div className="BB-content">
                     <div className="Side-column">
                         <img src={familytree} className="Graphic"></img>
@@ -23,7 +23,7 @@ class Backbone3 extends Backbone {
                         <div className="Content-list-box">Cancer diagnosed young</div>
                         <div className="Content-list-box">Cancer in multiple family members across generations</div>
                         <div className="Content-list-box" onClick={this.handleClick}>A person with multiple cancers
-                            {/* <Icon icon={IconNames.PLUS}></Icon> */}
+                            {/*<Icon icon={IconNames.PLUS}></Icon> */}
                         </div>
                         <Collapse isOpen={this.state.isOpen}>
                             <pre className="Drop-down" >

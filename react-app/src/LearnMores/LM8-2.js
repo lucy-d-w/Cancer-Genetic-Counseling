@@ -5,7 +5,7 @@ import { H2 } from "@blueprintjs/core";
 class LM_8_2 extends LearnMore {
     render() {
         return (
-            <LearnMore title="Hereditary Breast and Ovarian Cancer:  Men" first={false} last={true}>
+            <LearnMore title="Hereditary Breast and Ovarian Cancer:  Men" first={true} last={true} audio='LMs/LM8_1_S31.m4a'>
                 <div className="BB-content">
                     <div className="Column Content-box">
                         <H2>Inherited Cancer Gene</H2>

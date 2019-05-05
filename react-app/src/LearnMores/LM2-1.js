@@ -8,7 +8,7 @@ import genetic from "../Graphics/genetic.png";
 class LM_2_1 extends LearnMore {
     render() {
         return (
-            <LearnMore title="Causes of Cancer" first={true} last={true}>
+            <LearnMore title="Causes of Cancer" first={true} last={true} audio='LMs/LM2_1_S11.m4a'>
                 <div className="BB-content">
                     <div className="Column Content-box">
                         <H2>Sporadic</H2>

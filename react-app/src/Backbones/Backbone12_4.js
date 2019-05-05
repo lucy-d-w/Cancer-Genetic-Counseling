@@ -19,7 +19,7 @@ class Backbone12_4 extends React.Component {
                 <div className="Row">
                     <div className="BB-content" style={{ marginTop: '-2.5vh', height: '3vh' }}>    
                     <Overlay text="Learn More: Variant of Uncertain Significance" over={LM_12_1}/>
-                    <Overlay text="Learn More: Negative Results" over={LM_12_1} />
+                    <Overlay text="Learn More: Negative Results" over={LM_12_2} />
                     </div>
                 </div>
 

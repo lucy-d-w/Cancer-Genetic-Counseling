@@ -5,7 +5,7 @@ import LearnMore from '../LearnMore';
 class LM_12_2 extends LearnMore {
     render() {
         return (
-            <Backbone title="Negative Results" first={this.props.first} last={this.props.last}>
+            <Backbone title="Negative Results" first={true} last={true} audio='LMs/LM12_2_S43.m4a'>
                 <div className="Content">
                    
                     <div className={"Main-content Content-box"}>

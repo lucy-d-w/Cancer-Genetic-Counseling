@@ -60,8 +60,8 @@ class Track extends React.Component {
 
                 {/*(track == 1) && <LM10_2/>*/}
 
-                {(track == 3) && <LM_5_2 />}
-                {(track == 3) && <LM_5_3 />}
+                {(track == 3) && <LM_5_2 first={false} last={false}/>}
+                {(track == 3) && <LM_5_3 first={false} last={false}/>}
 
                 <Backbone6 />
                 <Backbone7/>

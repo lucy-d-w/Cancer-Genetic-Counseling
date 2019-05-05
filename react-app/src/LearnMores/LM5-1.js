@@ -6,7 +6,7 @@ import genes from "../Graphics/genes.png";
 class LM_5_1 extends LearnMore {
     render() {
         return (
-            <LearnMore title="How Genes Cause Cancer" first={true} last={true}>
+            <LearnMore title="How Genes Cause Cancer" first={true} last={true} audio='LMs/LM5_1_S19.m4a'>
                 <div className="Content">
                     <div className="Main-content">
                         <img src={genes} className='Main-graphic'></img>
