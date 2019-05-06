@@ -15,7 +15,7 @@ class Backbone5 extends Backbone {
                     <div className="BB-content" style={{ height: '45vh' }}>
                         <div className="Main-content" style={{ textalign: 'center' }}>
                             <div className="Main-graphic-wrap">
-                                <img src={chart2} className='Main-graphic' style={{marginTop: '-3vh'}}></img>
+                                <img src={chart2} className='Main-graphic' style={{ marginTop: '3vh' }}></img>
                             </div>
                         </div>
                     </div>

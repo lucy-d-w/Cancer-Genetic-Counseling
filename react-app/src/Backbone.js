@@ -1,6 +1,7 @@
 import React from "react";
 import './Backbone.css';
 import { Card, H1 } from "@blueprintjs/core";
+import dis_down_arrow from './Graphics/down-arrow2.png'
 import down_arrow from './Graphics/down-arrow.png'
 import up_arrow from './Graphics/up-arrow.png'
 
@@ -21,6 +22,7 @@ class Backbone extends React.Component {
         scrollPosition: 0,
         locked: true,
         selection: '',
+        down: dis_down_arrow,
 
     };
 
@@ -51,7 +53,7 @@ class Backbone extends React.Component {
     }
 
     unlock = () => {
-        this.setState({ locked: false });
+        this.setState({ locked: false, down: down_arrow });
     }
 
     componentDidMount = () => {
@@ -64,6 +66,7 @@ class Backbone extends React.Component {
     onVisible = (isVisible) => {
         if (typeof this.props.audio !== 'undefined') {
             if (isVisible) {
+                console.log(this.props.title + " is visible")
                 const path = this.audio_path + this.props.audio;
                 var audio = new Audio();
                 audio.preload = "metadata";
@@ -105,9 +108,9 @@ class Backbone extends React.Component {
                     </Card>
                 </div>
                 <div >
-                        {!this.props.last &&
+                    {!this.props.last &&
                             <button className="Arrow" onClick={this.scrollDown} disabled={this.state.locked || (this.props.needAnswer== true)}>
-                            <img src={down_arrow} />
+                            <img id="down" src={this.state.down} />
                         </button>}
                     {this.props.last &&
                         <button className="Arrow" onClick={this.scrollDown} style={{ visibility: 'hidden' }}>

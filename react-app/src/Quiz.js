@@ -15,7 +15,7 @@ class Quiz extends Backbone {
         const TOTAL = 16;
 
         return (
-            <Backbone title={"Learning Checkpoint #" + this.props.num} first={this.props.first} last={this.props.last} needAnswer={this.state.needAnswer}>
+            <Backbone title={"Learning Checkpoint #" + this.props.num} first={this.props.first} last={this.props.last} needAnswer={this.state.needAnswer} audio={this.props.audio}>
                 <div className="BB-content">
                     <div className='Main-content'>
                         <div className="Form Content-list">

@@ -9,7 +9,7 @@ class LM_5_1 extends LearnMore {
             <LearnMore title="How Genes Cause Cancer" first={true} last={true} audio='LMs/LM5_1_S19.m4a'>
                 <div className="Content">
                     <div className="Main-content">
-                        <img src={genes} className='Main-graphic'></img>
+                        <img src={genes} className='Main-graphic' style={{ marginTop: '-10vh' }}></img>
                     </div>
                 </div>
             </LearnMore>
