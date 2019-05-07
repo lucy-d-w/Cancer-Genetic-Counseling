@@ -5,7 +5,7 @@ import benefits from '../Graphics/benefits.png'
 class Backbone13_1 extends React.Component {
     render() {
         return (
-            <Backbone title="3 Types of Genetic Test Results" first={this.props.first} last={this.props.last}>
+            <Backbone title="3 Types of Genetic Test Results" first={this.props.first} last={this.props.last} audio='Backbones/Backbone 13-1.mp3'>
                 <div className="BB-content">
                     
                     <img src={benefits} className='Main-graphic' style={{width: 400, marginTop: -10, marginLeft: -200}}></img>

@@ -6,7 +6,7 @@ class Backbone12_2 extends React.Component {
     render() {
         return (
 
-        <Backbone title="What about a variant of uncertain significance (VUS) or negative result?" first={this.props.first} last={this.props.last}>
+        <Backbone title="What about a variant of uncertain significance (VUS) or negative result?" first={this.props.first} last={this.props.last} audio='Backbones/Backbone 12-2.mp3'>
 
                     <div className="BB-content">
                     
