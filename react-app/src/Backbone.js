@@ -84,6 +84,8 @@ class Backbone extends React.Component {
             } else {
                 /*this.audio.pause();*/
             }
+        } else { // no audio
+            this.unlock();
         }
     }
 
